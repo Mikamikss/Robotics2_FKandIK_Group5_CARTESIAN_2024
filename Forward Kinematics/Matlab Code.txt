@@ -7,7 +7,7 @@ a1 = 5;
 a2 = 5;
 a3 = 5;
 a4 = 5;
-  
+
 %% Joint variables
 d1 = 5;
 d2 = 5;
