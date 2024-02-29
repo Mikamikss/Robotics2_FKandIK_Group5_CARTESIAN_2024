@@ -16,3 +16,7 @@ d3 = a1 - a4 - ze
 
 # To solve for D4
 d1 = ye - a2
+
+print("d2 =", np.around(d2,3))
+print("d3 =", np.around(d3,3))
+print("d1 =", np.around(d1,3))
