@@ -45,7 +45,6 @@
 <br>
 
 
-
 ## III. Degrees of Freedom
 
   <p align="justify"> 
