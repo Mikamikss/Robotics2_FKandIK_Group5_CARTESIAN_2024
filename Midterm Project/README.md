@@ -51,6 +51,7 @@
   
 <p class="blank-line">&nbsp;</p>
 
+
 #### The Ideal Degrees of Freedom:
   - A <b>point</b> in 2D: 2-DOF; in 3D space: 3-DOF
   - A <b>rigid body</b> in 3D: 6-DOF
