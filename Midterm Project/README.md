@@ -84,6 +84,7 @@
 
 <br>
 
+
 #### Mechanical Manipulator Anatomy
 
 <div align="center">
