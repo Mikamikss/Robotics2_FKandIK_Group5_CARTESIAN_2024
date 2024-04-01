@@ -59,6 +59,7 @@
   - <b>Spatial manipulator</b>: 6-DOF
 <br>
 
+
 #### Types of Manipulator based on the number of Degrees of Freedom:
   - <b>Under-Actuated Manipulator</b>
       - _Spatial Manipulator_ with less than 6-DOF
