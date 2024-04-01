@@ -157,7 +157,6 @@ ___
   - If it is revolute or twisting, links are drawn from the center of the rotation.
   - If it is prismatic, either linear or orthogonal, links are drawn from the center of translation.
   - If it is from base, links are drawn from the center of gravity.
-    
 <br>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
