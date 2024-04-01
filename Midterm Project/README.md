@@ -42,7 +42,6 @@
 - **Rotation**: The robot can rotate around a vertical axis, which forms the base of the robot. This allows the robot to cover a wide horizontal range around its base.
 - **Elevation**: The robot's arm can move up and down in a vertical plane, enabling it to reach different heights.
 - **Extension**: The robot's arm can extend or retract, moving closer to or farther from the base.
-
 <br>
 
 
