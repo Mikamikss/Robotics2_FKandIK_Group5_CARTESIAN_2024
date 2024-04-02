@@ -116,46 +116,6 @@ ___
 
 
 
-## IV. Kinematic Diagram and D-H Frame
- 
-  <p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A <b><i>Kinematic Diagram</i></b> is a simplified representation of a mechanism that illustrates the motion of all the components without showing the forces or the physical dimensions that cause the motion. It is an important tool used in mechanical engineering to examine the motion of mechanisms. Typically, the diagram shows the mechanism's joints and links in schematic form. It is also a diagram that shows how the links and joints are connected together when all of the joint variables have a value of 0.
-</p>
-<br>
-
-<div align="center">
-  
-<table border="1">
-  <tr>
-    <th colspan="2">Joint Variables</th>
-  </tr>
-  <tr>
-    <td> <p align="center">Twisting or Revolute Joint</p> </td>
-    <td> <p align="center">Prismatic Linear or Orthogonal Joints</p> </td>
-  </tr>
-  <tr>
-    <td><img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/af546ee69ca1e190b12295380745505086c36d6b/First%20Page/Twisting%20or%20Revolute%20Joint.png alt=Twisting-or-Revolute-Joint style="height: 230px; float: left;"></td>
-    <td><img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/af546ee69ca1e190b12295380745505086c36d6b/First%20Page/Prismatic%20Linear%20or%20Orthoganal%20Joint.png alt=Prismatic-Linear-or-Orthogonal-Joints style="height: 200px; float: left;"></td></td>
-  </tr>
-</table>
-</div>
-<br>
-
-<p align="justify"> 
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>Links</i></b> are the rigid parts of the mechanical manipulator. A link is defined as a single part that can be a resistant body or a composite of resistant bodies with inflexible connections and relative motion in relation to other machine components. Also, joints are considered links and the values are constant:</p>
-    
-  - If it is revolute or twisting, links are drawn from the center of the rotation.
-  - If it is prismatic, either linear or orthogonal, links are drawn from the center of translation.
-  - If it is from base, links are drawn from the center of gravity.
-<br>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <b><i>Joint Variables</i></b>, are the values that change when the joint moves. It is a connection between two or more links that allows for some motion, or potential motion, between them.  Joints are sometimes known as <b><i>kinematic pairs</i></b>. A joint variable has a two indicator which is the rotation of a counterclockwise arrow &#8634; and the arrow with the flat line at the tail &#8614;. We use this symbol &#8634; for the twisting and revolute joint and we label it as <b><i>theta</i></b> ($&theta;$) , theta is the rotation angle of the circle. While in a prismatic joint we use this symbol &#8614; and label it as $d$, $d$ is the translation length. Remember that in joint variables, the numbering of joints will be based on their consecutive order.
-</p>
-<br>
-
-
-
 ### D-H Frame Assignment
 ___
 
@@ -182,9 +142,7 @@ ___
 ___
 
 <p align="center">
-  <img src="https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/d1ef20c165eca1aaeace5ca92892b76bb5c5f78a/First%20Page/Kinematic%20Diagram%20with%20D-H%20Frame.png"
-" style="height: 300px;"></p>
-
+  <img src="https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/d1ef20c165eca1aaeace5ca92892b76bb5c5f78a/First%20Page/Kinematic%20Diagram%20with%20D-H%20Frame.png" style="height: 300px;"></p>
 </div>
 <br>
 
@@ -198,4 +156,203 @@ Following the rules for assigning D-H Frames, we obtained the kinematic diagram 
   <p align="center">
   <img src=link alt=Kinematic-Diagram-and-D-H-Frame-Tutorial-Video style="height: 300px; float: left;">
 <br>
+
+
+
+## V. D-H Parametric Table
+
+#### Steps in Denavit-Hartenberg Notation
+  1.  Assign the frames according to the 4 D-H Frame Rules.
+  2.  Construct and fill out the D-H Parametric Table.
+  3.  Plug the table into the Homogeneous Transformation Matrix form.
+  4.  Multiply the matrices together.
+<br>
+
+
+<p align="center"> <b>Example of D-H Parametric Table</b> </p>
+
+<div align="center">
+  
+| $n$   | $\theta$ | $\alpha$ |    $r$    |    $d$    |
+| :---: |  :---:  |  :---:  |  :---:  |  :---:  |   
+|   1   |         |         |         |         |
+|   2   |         |         |         |         |
+|   3   |         |         |         |         |
+|   4   |         |         |         |         |
+
+</div>
+<br>
+
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  The <b><i>Four Parameters</i></b> in the D-H Parametric are  $&theta;$, $&alpha;$ $r$ and $d$. The $&theta;$ and the $&alpha;$ are the rotation or orientation parameters and their units are in degrees or radian. While $d$ and $r$ are the position or translation parameters and their units are in units of length.
+  </p>
+<br>
+
+
+<div align="center">
+  
+| $\theta$ | $\alpha$ | $d$ | $r$ |
+|     :---:     |     :---:     |     :---:    |     :---:     
+|  " $\theta$ " is the rotation around $z_{n-1}$ that is required to get $x_{n-1}$ to match $x_{n}$, with the joint variable theta if the joint is a revolute or twisting joint.  |   " $\alpha$ " is the rotation around $x_{n}$ that is required to match $z_{n-1}$ to $z_{n}$.  |  " $d$ " is the distance from the origin of $n-1$ and $n$ frames along the $z_{n-1}$ direction with the joint variable if the joint is prismatic.  |  " $r$ " is the distance from the origin of $n-1$ and $n$ frames along the $x_{n}$ direction.  |
+
+</div>
+<br>
+
+
+### D-H Parametric Table for a Spherical Manipulator
+___
+
+<p align="center">
+  <img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Pictures/Kinematic%20Diagram%20with%20DH%20Frame%20Assignments%20and%20DH%20Parameters.png?raw=true"
+" style="height: 300px;"></p>
+</div>
+<br>
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  The figure above is the D-H Parametric table for a Spherical Manipulator. Moreover, a D-H (Denavit-Hartenberg) Parametric Table is a method for organizing the four parameters generated by using the D-H frame assignment rules.  These parameters are useful in determining the kinematic equations of a robotic manipulator. The four parameters are: theta, alpha, r, and d. Theta represents the angle of the joint between the current and next link. For revolute joints, this is the angle of rotation around the frame's z-axis. It is the rotation around z sub n-1 that is required to get x sub n-1 to match x sub n, with the joint variable theta if the joint is a revolute or twisting joint. The alpha represents the offset angle between the z-axis of frame (n-1) and the z-axis of frame (n). For easier calculations, it is commonly set to 0 or 90 degrees. The r represents the distance from the origin of n-1 and n frames along the x-sub-n direction. And lastly, The d refers to the distance from the origin of n-1 and n frames along the z-sub-n-1 direction, with the joint variable if the joint is prismatic. By filling up this table for each link in the manipulator, we will obtain a concise representation of the manipulator's geometry based on these four parameters.  These parameters are then employed in formulas to compute the homogeneous transformation matrices, which ultimately represent the position and orientation of the manipulator's end-effector based on the joint variables.
+  </p>
+<br>
+
+
+<p align="center"> <b>D-H Prametric Table Tutorial Video</b> </p>
+  <p align="center">
+  <img src=link alt=D-H-Parametic-Table-Tutorial-Video style="height: 300px; float: left;">
+<br>
+
+
+
+## VI. Homogeneous Transformation Matrix
+
+<p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Homogeneous Transformation Matrix</i></b> includes both the rotation matrix and the displacement vector in the same matrix. Homogeneous transformation matrices are described as matrices that specify an object's position and orientation. Rotation matrices can be combined using multiplication while Position vectors cannot be added or multiplied. In order to combine position vectors, we shall use the homogeneous transformation matrix denoted as $H_{n}^{n-1}$ or $T_{n}^{n-1}$. The homogeneous transformation matrix contains a superscript and a subscript that indicate the reference frame and projected frame. It is obtained by concatenating 3x3 rotation matrix and 3x1 position vector, resulting in a 3x4 matrix. However, a square matrix is required thus adding an augmentation row is added at the bottom. 
+</p>
+<br>
+
+<p align="center"> <b>Homogeneous Transformation Matrix Formula</b> </p>
+
+$$
+H_{n}^{n-1} =
+\begin{bmatrix}
+\ Rotation \ (3\times3) & Position \ (3\times1)\\\
+0  \ \ \ \ \ \ \ \ \ \ 0 \ \ \ \ \ \ \ \ \ \ \ 0 & 1
+\end{bmatrix}
+$$
+<br>
+
+
+$$\begin{aligned}
+H_{n}^{n-1} = 
+\begin{bmatrix} 
+  cos\theta_{n} & -sin\theta_{n}cos\alpha_{n} & sin\theta_{n} sin\alpha_{n} & r_{n}cos\theta_{n} 
+  \\
+  sin\theta_{n} & cos\theta_{n}cos\alpha_{n} & -cos\theta_{n}sin\alpha_{n} & r_{n}sin\theta_{n} 
+  \\
+  0 & sin\alpha_{n} & cos\alpha_{n} & d_{n} 
+  \\
+  0 & 0 & 0 & 1 
+\end{bmatrix} 
+&& or &&
+H_{n}^{n-1} = 
+\begin{bmatrix} 
+  c\theta_{n} & -s\theta_{n}c\alpha_{n} & s\theta_{n} s\alpha_{n} & r_{n}c\theta_{n} 
+  \\
+  s\theta_{n} & c\theta_{n}c\alpha_{n} &  -c\theta_{n}s\alpha_{n} & r_{n}s\theta_{n}
+  \\
+  0 & s\alpha_{n} & c\alpha_{n} & d_{n}
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+\end{aligned}$$
+
+<br>
+<br>
+
+
+### Homogeneous Transformation Matrix of a Spherical Manipulator
+___
+
+
+<p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There are two ways to obtain the Homogeneous Transformation Matrix, by manual computation and using the D-H Parametric Table.
+</p>
+<br>
+
+#### Obtaining the Homogeneous Transformation Matrix Formula Computed Method
+  - To obtain $H_{1}^{0}$, concatenate the rotation matrix $r_{1}^{0}$ and the position vector $r_{1}^{0}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below.
+
+$$
+H_{1}^{0} =
+\begin{bmatrix} 
+  c\theta_{1} & 0 & s\theta_{1} & 0 
+  \\
+  s\theta_{1} & 0 & -c\theta_{1} & 0
+  \\
+  0 & 1 & 0 & a_{1}
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+<br>
+
+  - Same as the previous matrix, to get the $H_{2}^{1}$, concatenate the rotation matrix $r_{2}^{1}$ and position vector $p_{2}^{1}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below. 
+
+$$
+H_{2}^{1} =
+\begin{bmatrix} 
+  -s\theta_{2} & 0 & c\theta_{2} & 0 
+  \\
+  c\theta_{2} & 0 & s\theta_{2} & 0
+  \\
+  0 & 1 & 0 & 0
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+<br>
+
+  - Lastly, to obtain $H_{3}^{2}$, concatenate the rotation matrix $r_{3}^{2}$ and the position vector $p_{3}^{2}$, followed by the augmentation column 0 0 0 1 at the bottom that gives us this matrix presented below.
+
+$$
+H_{3}^{2} =
+\begin{bmatrix} 
+  1 & 0 & 0 & 0 
+  \\
+  0 & 1 & 0 & 0
+  \\
+  0 & 0 & 1 & a_{2}+a_{3}+d_{3}
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+<br>
+
+  - Finally, to determine the homogeneous transformation matrix from frame 0 (the base frame) to frame 3 (the end-effector), multiply all of the transformation matrices H_{1}^{0}, H_{2}^{1}, and H_{3}^{2} together. Then we can obtain: 
+
+$$
+H_{3}^{0} =
+H_{1}^{0} \ H_{2}^{1} \ H_{3}^{2}  
+\begin{bmatrix} 
+  -c\theta_{1}s\theta_{2} & s\theta_{1} & c\theta_{1}c\theta_{2} & c\theta_{1}c\theta_{2}(a_{2}+a_{3}+d_{3})
+  \\
+  -s\theta_{1}s\theta_{2} & -c\theta_{1} &  s\theta_{1}c\theta_{2} & s\theta_{1}c\theta_{2}(a_{2}+a_{3}+d_{3})
+  \\
+  -c\theta_{2} & 0 & s\theta_{2} & a_{1}+s\theta_{1}(a_{2}+a_{3}+d_{3})
+  \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+<br>
+
+
+
+<p align="center"> <b>Homogeneous Transformation Matrix of a Spherical Manipulator Tutorial Video</b> </p>
+  <p align="center">
+  <img src=link alt=Homogeneous-Transformation-Matrix-of-a-Spherical-Manipulator-Tutorial-Video style="height: 300px; float: left;">
+<br>
+
 
