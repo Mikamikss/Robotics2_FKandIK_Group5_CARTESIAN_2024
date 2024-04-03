@@ -103,16 +103,59 @@ ___
   
 |  Cartesian Manipulator On Ceiling  | Solution |
 |         :---: |     :-----:      |
-| <img src=    "> |  $$M = 6n - \sum_{i=1}^m (6-Ci)$$  $$M = 6(3) - [(6-1) + (6-1) + (6-1)]$$  $$M = 18 - (5 + 5 + 5)$$  $$M = 18 - 15$$  $$M = 3$$  <p>&#8756; This is an Under-Actuated Cartesian Manipulator with 3-DOF.</p> |
+| <img src=  here  "> |  $$M = 6n - \sum_{i=1}^m (6-Ci)$$  $$M = 6(3) - [(6-1) + (6-1) + (6-1)]$$  $$M = 18 - (5 + 5 + 5)$$  $$M = 18 - 15$$  $$M = 3$$  <p>&#8756; This is an Under-Actuated Cartesian Manipulator with 3-DOF.</p> |
 
 </div>
 <br>
 
-
-  <p align="justify"> 
+ <p align="justify"> 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The illustration above is a simplified diagram of an RRP Spherical Manipulator. It is also shown above the written computation to get the Degrees of Freedom of Spherical Manipulator. Furthermore, a Spherical Manipulator is a robot or manipulator with two rotational joints and one prismatic joint and it is commonly used on industries that involves material handling and welding. Meanwhile, Degrees of Freedom, as discussed in our classes, is the minimum number of independent parameters or variables or coordinates required to fully describe a system. To get the degrees of freedom for spherical manipulator, the Grubler’s Criterion for Mobility or DOF of Spatial Manipulator is used as the spherical manipulator is a type of spatial manipulator. Based on the computations above, it can be concluded that this spherical manipulator is an Under-Actuated Spatial Manipulator with three degrees of freedom. 
 </p>
 <br>
+
+## IV. Kinematic Diagram and D-H Frame
+  <p align="center">
+  <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/6b1f57110fecfee109d07f42817c1e87ddae8e89/First%20Page/Kinematic%20Diagram.png alt=Spherical-Manipulator-Kinematic-Diagram style="height: 300px;">
+  </div>
+<br>
+
+  <p align="justify"> 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A <b><i>Kinematic Diagram</i></b> is a simplified representation of a mechanism that illustrates the motion of all the components without showing the forces or the physical dimensions that cause the motion. It is an important tool used in mechanical engineering to examine the motion of mechanisms. Typically, the diagram shows the mechanism's joints and links in schematic form. It is also a diagram that shows how the links and joints are connected together when all of the joint variables have a value of 0.
+</p>
+<br>
+
+<div align="center">
+  
+<table border="1">
+  <tr>
+    <th colspan="2">Joint Variables</th>
+  </tr>
+  <tr>
+    <td> <p align="center">Twisting or Revolute Joint</p> </td>
+    <td> <p align="center">Prismatic Linear or Orthogonal Joints</p> </td>
+  </tr>
+  <tr>
+    <td><img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/af546ee69ca1e190b12295380745505086c36d6b/First%20Page/Twisting%20or%20Revolute%20Joint.png alt=Twisting-or-Revolute-Joint style="height: 230px; float: left;"></td>
+    <td><img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/af546ee69ca1e190b12295380745505086c36d6b/First%20Page/Prismatic%20Linear%20or%20Orthoganal%20Joint.png alt=Prismatic-Linear-or-Orthogonal-Joints style="height: 200px; float: left;"></td></td>
+  </tr>
+</table>
+</div>
+<br>
+
+  <p align="justify"> 
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>Links</i></b> are the rigid parts of the mechanical manipulator. A link is defined as a single part that can be a resistant body or a composite of resistant bodies with inflexible connections and relative motion in relation to other machine components. Also, joints are considered links and the values are constant:</p>
+    
+  - If it is revolute or twisting, links are drawn from the center of the rotation.
+  - If it is prismatic, either linear or orthogonal, links are drawn from the center of translation.
+  - If it is from base, links are drawn from the center of gravity.
+    
+<br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <b><i>Joint Variables</i></b>, are the values that change when the joint moves. It is a connection between two or more links that allows for some motion, or potential motion, between them.  Joints are sometimes known as <b><i>kinematic pairs</i></b>. A joint variable has a two indicator which is the rotation of a counterclockwise arrow &#8634; and the arrow with the flat line at the tail &#8614;. We use this symbol &#8634; for the twisting and revolute joint and we label it as <b><i>theta</i></b> ($&theta;$) , theta is the rotation angle of the circle. While in a prismatic joint we use this symbol &#8614; and label it as $d$, $d$ is the translation length. Remember that in joint variables, the numbering of joints will be based on their consecutive order.
+</p>
+<br>
+
 
 
 ### D-H Frame Assignment
@@ -329,7 +372,7 @@ $$
 
 <br>
 
-  - Finally, to determine the homogeneous transformation matrix from frame 0 (the base frame) to frame 3 (the end-effector), multiply all of the transformation matrices H_{1}^{0}, H_{2}^{1}, and H_{3}^{2} together. Then we can obtain: 
+  - Finally, to determine the homogeneous transformation matrix from frame 0 (the base frame) to frame 3 (the end-effector), multiply all of the transformation matrices $H_{1}^{0}$, $H_{2}^{1}$, and $H_{3}^{2}$ together. Then we can obtain: 
 
 $$
 H_{3}^{0} =
@@ -355,3 +398,391 @@ $$
 <br>
 
 
+
+## VII. Inverse Kinematics
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Kinematics</i></b> is the study of how bodies move in a robotic mechanism, regardless of the forces or torques that cause the motion. It also studies the relationship between a robot's joint coordinates and its spatial organization, which is a fundamental and classical topic in robotics.
+  </p>
+<br>
+
+<div align="center">
+  
+|  Forward Kinematics  | Inverse Kinematics |
+|   ---  |   ---  |
+|  - The given inputs are the joint variables and the output is the position vector.  |  - The given is the position vector while the output is the joint variables.  |
+|  - For identifying the limits of your joint.  |  - For mimicking the motion of the human arm.  |
+|  - For obtaining the trajectory solution.  |  - For detailed positioning of the end-effector.  | 
+|  - Easier to solve.  |  - Difficult to solve.  |
+
+</div>
+<br>
+
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Forward kinematics</i></b> is the geometric problem of finding the position vector and orientation of the end effector using joint variables. It is also a technique for calculating the frames of a robot's links using a configuration and the robot's kinematic structure as input. While <b><i>Inverse kinematics</i></b> is utilized to move the mechanical manipulator. Inverse Kinematics is essentially the opposite operation: it calculates configurations to reach the desired workspace coordinate. This process is required for many robotics activities, including moving a tool along a specified path, manipulating items, and viewing situations from the correct perspective.
+  </p>
+<br>
+
+
+### Inverse Kinematics of a Spherical Manipulator using Graphical Method
+___
+
+<p align="center">
+  <img src="https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/d1ef20c165eca1aaeace5ca92892b76bb5c5f78a/First%20Page/Kinematic%20Diagram%20with%20D-H%20Frame.png" style="height: 300px;"></p>
+</div>
+<p align="center"> Kinematic Diagram with D-H Frame of a Spherical Manipulator </p>
+<br>
+
+
+#### Inverse Kinematics using Graphical Method
+<p align="center"> <b>Top View</b> </p>
+<br>
+  
+<p align="center">
+    <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20top%201.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; float: left;">
+    <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20top%202.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; float: right;">
+</p>
+<br>
+      
+To solve for $\theta_{1}$, use sohcahtoa;
+  - tan $\theta_{1}=$ adjacent/hypotenuse
+  - opposite = $Y_{3}^{0}$ <br>
+  - adjacent = $X_{3}^{0}$
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;However, the hypotenuse is changing its length due to $d_{3}$ since it is a prismatic joint as well as because of the joint 2 being a revolute joint and so, it can change its orientation hence, we will give a new name for our hypotenuse, in this case, $r_{1}$. So from the equation 1, we can now derive the formula for $r_{1}$.
+<br>
+<br>
+
+<p align="center"> <b>Front View</b> </p>
+<br>
+  
+<p align="center">
+    <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20front%201.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; float: left;">
+    <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20front%202.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; float: right;">
+</p>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And now in terms of the front view of the spherical manipulator, the $r_{1}$ will now be the adjacent length or side of $\theta_{2}$. After placing the $r_{1}$, it can be noticed that we now have a right triangle with the $a_{2}+a_{3}+d_{3}$ being the hypotenuse. However we can’t use the $Z$ as the opposite side of our triangle thus, we will make a another line that would represent the opposite length of  $\theta_{2}$ and we will call it as $r_{2}$. 
+
+Based on the illustration above, we can derive that,
+  - $Z = a_{1}$ + $r_{2}$ therefore,
+  - $r_{2} =  Z - a_{1}$  eq. 3 
+
+And so, we can now derive for the formula of  $\theta_{2}$ using again the sohcahtoa;
+  - $tan\theta_{2} = opposite/adjacent$
+  - $opposite = r_{2}$
+  - $adjacent = r_{1}$
+  - $\theta_{2}$ $=$ $\theta^{-1} (r_{2} / r_{1})$   eq. 4
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finally, to find the joint variable d_{3}, the Pythagorean theorem is used;
+  - $c_{2} = a_{2} + b_{2}$
+  - $( a_{2}+a_{3}+d_{3})^{2} ) = r_{1}^{2} + r_{2}^{2}$
+  - $a_{2}+a_{3}+d_{3})^{2} = r_{1}^{2} + r_{2}^{2}$
+  - $d_{3} = r_{1}^{2} + r_{2}^{2} - a^{2} - a^{3}$   eq. 5
+<br>
+<br>
+
+
+<div align="center">
+  
+|  Top View  | Process |
+|   ---  |   ---  |
+|  <p align="center"> <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20top%201.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; width: 1200px"></p>  |  To solve for $\theta_{1}$, use sohcahtoa;<br>  &nbsp;&nbsp;&nbsp;&nbsp;tan $\theta_{1}=$ adjacent/hypotenuse<br>  &nbsp;&nbsp;&nbsp;&nbsp;opposite = $Y_{3}^{0}$ <br>  &nbsp;&nbsp;&nbsp;&nbsp;adjacent = $X_{3}^{0}$  |
+|  <p align="center"> <img src=https://github.com/yannaaa23/Robotics2_Midterm_Try/blob/09f5a206f0c4c7439b1ef3df475fadf370f38396/First%20Page/inverse%20top%202.png alt=Inverse-Kinematics-of-a-Spherical-Manipulator style="height: 300px; width: 1200px"></p>  |  However, the hypotenuse is changing its length due to $d_{3}$ since it is a prismatic joint as well as because of the joint 2 being a revolute joint and so, it can change its orientation hence, we will give a new name for our hypotenuse, in this case, $r_{1}$. So from the equation 1, we can now derive the formula for $r_{1}$.   |
+
+</div>
+<br>
+
+
+#### Summary of the Step-by-Step Process on How to Find the Inverse Kinematics of a Spherical Manipulator
+  - On the <b><i>Top View</b></i>:
+    - To solve for $\theta$<sub>1</sub>, we use the inverse tangent because $Y_{3}^{0}$ and $X_{3}^{0}$ is given.
+    - We can’t use $a_{2} + a_{3} + d_{3}$ as hypotenuse that’s why we name our hypotenuse as $r_{1}$.
+  - On the <b><i>Front View</b></i>:
+      - $r_{1}$ is the length of the link of the prismatic joint and the end-effector that change if $\theta_{2}$ changes its orientation.
+      - Then for the new side, which is the $r_{2}$ to get the value of $Z_{3}^{0}$, so the $r_{2}$ is equal to $Z_{3}^{0} - a_{1}$.
+      - To solve for $\theta_{2}$, we can use again the inverse tangent formula.
+      - Then to solve for $d_{3}$, we will use the Pythagorean Theorem.
+<br>
+
+
+
+## VIII. Forward and Inverse Kinematics Calculator (Application)
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+After the manual calculation of the requirements to build the spherical manipulator, the students applies it in a software based manner for better visualization and interpretation of the theories used in building the spherical manipulator. This was done using <a href='https://www.python.org/'>Python</a> and other libraries that are essential to build the application. 
+</p>
+
+### Libraries Used:
+___
+
+These are the following libraries used for the application:
+
+- [`roboticstoolbox-python`](https://github.com/petercorke/robotics-toolbox-python) This library was used to visually display the spherical manipulator model after forward and Inverse Kinematics Calculation was done.
+
+- [`numpy`](https://github.com/numpy/numpy) This library was used for mathematical expressions required in modelling the manipulator and express it in Python format.
+
+- [`tkinter`]() This is a library included when you install python. This serves as the library for building the _Graphical User Interface_ (GUI) of the application
+
+- [`openpyxl`](https://openpyxl.readthedocs.io/en/stable/) This library was used in order to save data in an excel file. This helps the user to track down results or serves as the history of results of the application.
+
+- [`pyinstaller`](https://pyinstaller.org/en/stable/) This is used to convert the Python files to an Executable file that allows the application to run to other devices without the necessity to installation of libraries and Python.
+
+- [`auto-py-to-exe`](https://pypi.org/project/auto-py-to-exe/) This library is a .py to .exe converter that uses a simple graphical interface and PyInstaller instead of converting the python file in a terminal.
+<br>
+
+
+### Tkinter Designer
+___
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Tkinter is known for its old school way of creating GUI in terms of its aesthetics. <a href="https://github.com/ParthJadhav/Tkinter-Designer">Tkinter Designer</a> is a gui creator developed by <a href="https://github.com/ParthJadhav">ParthJadhav</a> to create modern GUI using a design sofware <a href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1350011666009633546">Figma</a>. Tkinter Designer uses the Figma API in reading the design file and generates the codes and resource files (assets) needed for the designed GUI. This still uses codes that is built in with tkinter. 
+</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/42001064/119863796-92af4a80-bf37-11eb-9f6c-61b1ab99b039.png" width= 700>
+</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Even though Tkinter Designer generates the code itself, code is still needed to be modify because some resources such as fonts and element alignment are not interpreted in the code properly. Troubleshooting and debugging is necessary.  
+</p>
+<br>
+
+### Graphical User Interface Design
+___
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The design of the Graphical User Interface focuses on a modern approach. The GUI uses the following colors for the design of the GUI. 
+</p>
+
+#### Color Pallete
+
+- ![#262626](https://via.placeholder.com/15/262626/000000?text=+) `#262626` - Background of the GUI.
+- ![#51FF00](https://via.placeholder.com/15/51FF00/000000?text=+) `#51FF00` - Accent Color of the GUI.
+- ![#D9D9D9](https://via.placeholder.com/15/D9D9D9/000000?text=+) `#D9D9D9` - Entry Boxes of the GUI.
+- ![#FFFFFF](https://via.placeholder.com/15/FFFFFF/000000?text=+) `#FFFFFF` - Font Color of the GUI.
+- ![#888888](https://via.placeholder.com/15/888888/000000?text=+) `#888888` - Buttons of the GUI.
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Pictures/GUI%20Design/Figma%20Design.png?raw=true" width= 700>
+</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+However through out the design process and coding the application, we opted to add additional features such as saving the data to an excel file. Moreover, we also added a checkbutton that decides whether the Data will be recorded or not. Below is the final design of the application's GUI run in python.
+</p>
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Pictures/GUI%20Design/Final%20GUI%20Design.png?raw=true" width= 700>
+</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Some circumstances such as the font used on the title are modified with what is available with tkinter. Otherwise, the design of the GUI was accomplished based on the user's specification.
+</p>
+<br>
+
+### Functionality
+___
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Tkinter designer only generates the design of the GUI of application but does not directly bind the functionality of the application. With these, we defined functions and bind it with the buttons present in the GUI.
+</p>
+
+#### Reset Button
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The reset deletes all the entries present in the all entry boxes. By clicking the reset button, it is expected to do the its function. Here is the demo of the function. 
+</p>
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Reset_Button.gif?raw=true" width= 700>
+</p>
+<br>
+
+#### Forward Button
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The forward button performs the forward kinematics of function of the calculator. The function of these button is to get entry values from entry boxes of the link lengths and the joint variable and do the computations of forward kinematics to obtain the position vector. It also saves the datas in an excel file when the <a href='#recording-data'>Record Data Checkbox</a>  is checked. Additionally, it launches the <code>roboticstoolbox</code> that visually shows the orientation of the manipulator based on the data entered and computation.
+</p>
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Forward_Button.gif?raw=true" width= 700>
+</p>
+<br>
+
+#### Inverse Button
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Just like the forward button, this button is binded to run a function for inverse kinematics calculation. Instead, this get entry values from the link lengths and position vector in order to obtain the values of the joint variables. This also record the data when the <a href='#recording-data'>Record Data Checkbox</a> is checked. Then it launches <code>roboticstoolbox</code> to show the orientation of the manipulator.
+</p>
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Inverse_Button.gif?raw=true" width= 700>
+</p>
+<br>
+
+#### Recording Data
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+When obtaining the data, it is nice to runback through the obtained results of from the calculator. Glad to help you with that because this calculator records your data instantaneously in an excel file. You also have an option to turn off this feature by unchecking the checkbox. You can also know if the data is recorded or not through an info message box that pop-up the screen. The video below shows the demonstration of turning off/on the record data checkbox.
+</p>
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Record_Data.gif" width= 700>
+</p>
+<br>
+
+#### View Excel File
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+As the data from previous session can be recorded, we created a button that is linked to access the excel file where all data are stored. Sheets for forward kinematics data is separated to the inverse kinematics formula. Additionally we add timestamp to better track the desired results.
+</p>
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/View_Excel.gif" width= 700>
+</p>
+<br>
+
+#### Error Message Boxes
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+When entering data, it is inevitable to encounter mistakes. We designed the application to be responsive to these mistake through an error message box showing the error that has occured. Errors are listed below.
+</p>
+
+- __Please fill all required fields__ - this error will be encountered if the required entry boxes for either forward or inverse are not filled. 
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Required_Fields.gif" width= 700>
+</p>
+
+- __Invalid Input__ - this error will be encountered when a non float value is detected in on the entry boxes. It will be prompt 
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Invalid_Input.gif" width= 700>
+</p>
+
+- __Undefined__ - this error occurs when ``ZeroDivisionError`` occured on the inverse kinematics computation. These is due to the [Formula #1]() of the inverse kinematics computation. 
+
+<p align="center">
+<img src="https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/GIFs/GUI/Undefined.gif" width= 700>
+</p>
+<br>
+
+### Installation
+___
+
+Installation of the application can be done in two ways: <b>Installer</b>, or <b>Portable Software</b>.
+
+#### Installer (Installation Guide)
+
+1. Download and run the [SphericalCalcApp_setup.exe](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Spherical%20GUI%20Installer/SphericalCalcApp.zip) file.
+2. During install it in a directory such as Desktop or Document.
+3. Run __Spherical_GUI.exe__ and enjoy the app.
+
+<sub>Installation Video <a href="">Here</a></sub>
+
+#### Portable Software
+
+1. Download the zip file [SphericalCalcApp.zip](https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/main/Midterm%20Project/Spherical%20GUI%20Installer/SphericalCalcApp.zip).
+2. Extract the file.
+3. Run __Spherical_GUI.exe__ and enjoy the app.
+
+<sub>Installation Video <a href="">Here</a></sub>
+<br>
+<br>
+
+
+
+## IX. References
+- Polar/Spherical Robots. (2022, May 13). Midwest Engineered Systems. https://www.mwes.com/types-of-industrial-robots/polar-spherical-robots/
+- Agnihotri, N. (2023, June 29). Understanding the degree of freedom in robots. Engineers Garage. https://www.engineersgarage.com/understanding-the-degree-of-freedom-in-robots/
+- What is a kinematic diagram, and how does it help in understanding the motion of mechanisms? (n.d.). https://www.proprep.com/questions/what-is-a-kinematic-diagram-and-how-does-it-help-in-understanding-the-motion-of-mechanisms
+- Lab, D. (2021, September 30). Kinematics in Robotics. https://www.linkedin.com/pulse/kinematics-robotics-decibelslab
+- Automaticaddison, A. (2020, August 26). Find Homogeneous Transformation Matrices for a Robotic Arm – Automatic Addison. https://automaticaddison.com/find-homogeneous-transformation-matrices-for-a-robotic-arm/#:~:text=Homogeneous%20transformation%20matrices%20combine%20both,frame%200%20to%20frame%202
+<hr> 
+<br>
+
+
+
+## X. Group Members:
+- Alojado, Stephen Gabriel S.
+- Apostol, Jan Benedict D.
+- Cardenas, Sofia Bianca J.
+- Catapang, Jamil Darrius S.
+- Umali, Ariane Mae D.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+## Table of Contents
+- [Kinematic Diagram and Parametric Table of Spherical Manipulator](#-kinematic-diagram-and-parametric-table-of-spherical-manipulator-)
+- [Derivation of Inverse Kinematics using Graphical Method](#-derivation-of-inverse-kinematics-using-graphical-method-)
+- [Comparison of Forward and Inverse Kinematics in MATLAB and Phyton](#-comparison-of-forward-and-inverse-kinematics-in-matlab-and-phyton-)
+   - [Trial Table of Forward Kinematics in MATLAB and Python](#-trial-table-of-forward-kinematics-in-matlab-and-python-)
+   - [Trial Table of Inverse Kinematics in MATLAB and Python](#-trial-table-of-inverse-kinematics-in-matlab-and-python-)
+- [Group Members](#group-members)
+<br>
+
+<h1 align="center"> Kinematic Diagram and Parametric Table of Spherical Manipulator </h1> 
+<p align="center">
+  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/c0c481a4-3d7c-4005-83e1-21bc436ec15e alt=DH_Frame_and_Parametric_Table width="700"/>
+<p align="center">
+</p>
+<br>
+<br>
+
+<h1 align="center"> Derivation of Inverse Kinematics using Graphical Method </h1> 
+<p align="center">
+   <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/b659b633-7068-412a-b9b0-58626bb0287f alt=Inverse_Kinematics_Graphical_Method_1 width="700"/>
+<p align="center">
+   <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/assets/157677365/d8f43e6d-8a61-4257-808e-a8dff408b0ef alt=Inverse_Kinematics_Graphical_Method_2 width="700"/>
+<br>
+<br>
+
+<h1 align="center"> Comparison of Forward and Inverse Kinematics in MATLAB and Phyton </h1>
+<hr>
+
+<h1 align="center"> Trial Table of Forward Kinematics in MATLAB and Python </h1> 
+<p align="center">
+  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/0d4a1af26e3a6964fa47395ed9f41d56eaa53fae/Trial%20Table%20for%20Forward%20and%20Inverse%20Kinematics/Trial%20Table%20for%20Forward%20Kinematics.png alt=trial-table-of-forward-kinematics-in-matlab-and-python width="800"/>
+</p>
+<br>
+<br>
+
+<h1 align="center"> Trial Table of Inverse Kinematics in MATLAB and Python </h1> 
+<p align="center">
+  <img src=https://github.com/t1pen/Robotics2_FKandIK_Group7_SPHERICAL_2024/blob/440b5c7742bceab7f9bf815b060b93355776fd29/Trial%20Table%20for%20Forward%20and%20Inverse%20Kinematics/Trial%20Table%20for%20Inverse%20Kinamatics.png alt=trial-table-of-inverse-kinematics-in-matlab-and-python width="990"/>
+</p>
+<br>
+<br>
+
+
+### Group Members:
+- Alojado, Stephen Gabriel S.
+- Apostol, Jan Benedict D.
+- Cardenas, Sofia Bianca J.
+- Catapang, Jamil Darrius S.
+- Umali, Ariane Mae D.
