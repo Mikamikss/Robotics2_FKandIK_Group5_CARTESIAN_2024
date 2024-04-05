@@ -131,8 +131,52 @@ The history of the D-H frame assignment dates back to the work of Jacques Denavi
 The D-H (Denavit-Hartenberg) Parametric Table organizes four key parameters crucial for describing a robotic manipulator's kinematics: theta, alpha, r, and d. Theta defines the joint angle between current and next links, indicating the rotation around the z-axis of the frame. For instance, Theta 1 is 0° as it aligns perpendicular to the x-axis of the subsequent frame. Alpha signifies the offset angle between z-axes of consecutive frames, with Alpha 1 at 270° for counterclockwise rotation to align with the next frame's z-axis. Parameter r represents the distance between origins of adjacent frames along the x-axis, resulting in all r values being 0 in this case. Lastly, d represents the distance along the z-axis from the origin of one frame to another, with d1 as A1 for the base frame and similar calculations for d2, d3, and d4. Completing this table for each link provides a concise description of the manipulator's geometry, crucial for computing homogeneous transformation matrices. These matrices determine the manipulator's end-effector position and orientation based on joint variables.
 
 
+### VI :notebook: Homogeneous Transformation Matrix
 
+<p align="center">
+  <img src=https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Gif%20%26%20GUI/tumblr_77c9c5851d894930ec22b6ec95a57c71_f5a04dc5_400.gif style="height: 900px; float: left;">
+ </p>
+ 
+<p align="justify">
+    In a Cartesian manipulator, the Homogeneous Transformation Matrix (HTM) is a mathematical tool used to represent the position and orientation of the end-effector relative to the base frame. It's a 4x4 matrix that combines both rotation and translation information in a single representation. Each element of the matrix corresponds to a specific transformation component, such as rotation angles and translation distances along the x, y, and z axes.
+    
 
+<p align="left"><b>Homogeneous Transformation Matrix Formula</b>
+ 
+  $$
+H_{n}^{n-1} =
+\begin{bmatrix}
+\text{Rotation} \ (3\times3) & \text{Position} \ (3\times1) \\
+0 & 1
+\end{bmatrix}
+$$
+
+Obtaining the Homogeneous Transformation Matrix Formula Computed Method
+
+$$
+H_{1}^{0} =
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & -1 & 0 & a1 \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+</div>
+
+<div style="text-align: right">
+
+$$
+H_{2}^{1} =
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & -1 & 0 & a1 \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+</div>
 
 
 
