@@ -9,41 +9,681 @@ import spatialmath
 from spatialmath import SE3
 import matplotlib
 matplotlib.use('TkAgg')
+from pathlib import Path
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
-# Create GUI with title
-gui = Tk()
-gui.title("Cartesian Calculator")
-gui.resizable(True,True)
-gui.configure(bg='red')
 
-# Reset Function
-def reset():
-    
-    a1_E.delete(0,END)
-    a2_E.delete(0,END)
-    a3_E.delete(0,END)
-    a4_E.delete(0,END)
+OUTPUT_PATH = Path(__file__).parent
+ASSETS_PATH = OUTPUT_PATH / Path(r"/home/yuel/Desktop/CARTESIAN/GUI/build/assets/frame0")
 
-    d1_E.delete(0,END)
-    d2_E.delete(0,END)
-    d3_E.delete(0,END)
 
-    X_E.delete(0,END)
-    Y_E.delete(0,END)
-    Z_E.delete(0,END)
+def relative_to_assets(path: str) -> Path:
+    return ASSETS_PATH / Path(path)
+
+
+window = Tk()
+window.geometry("1100x700")
+window.configure(bg = "#005B8F")
+
+canvas = Canvas(
+    window,
+    bg="#005B8F",
+    height=700,
+    width=1100,
+    bd=0,
+    highlightthickness=0,
+    relief="ridge"
+)
+
+canvas.place(x = 0, y = 0)
+image_image_1 = PhotoImage(
+    file=relative_to_assets("image_1.png"))
+image_1 = canvas.create_image(
+    580.0,
+    528.0,
+    image=image_image_1
+)
+
+canvas.create_rectangle(
+    8.0,
+    8.0,
+    1090.0,
+    124.0,
+    fill="#001B63",
+    outline="")
+
+canvas.create_text(
+    466.0,
+    147.0,
+    anchor="nw",
+    text="Link lengths",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 32 * -1)
+)
+
+canvas.create_rectangle(
+    438.0,
+    204.0,
+    481.0,
+    232.0,
+    fill="#0047FF",
+    outline="")
+
+canvas.create_rectangle(
+    438.0,
+    309.0,
+    481.0,
+    337.0,
+    fill="#0047FF",
+    outline="")
+
+canvas.create_rectangle(
+    438.0,
+    274.0,
+    481.0,
+    302.0,
+    fill="#0047FF",
+    outline="")
+
+canvas.create_rectangle(
+    438.0,
+    239.0,
+    481.0,
+    267.0,
+    fill="#0047FF",
+    outline="")
+
+canvas.create_text(
+    495.0,
+    199.0,
+    anchor="nw",
+    text="=",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 32 * -1)
+
+)
+
+
+tbox1 = canvas.create_text(
+    495.0,
+    304.0,
+    anchor="nw",
+    text="=",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 32 * -1)
+)
+
+canvas.create_text(
+    495.0,
+    269.0,
+    anchor="nw",
+    text="=",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 32 * -1)
+)
+
+canvas.create_text(
+    495.0,
+    234.0,
+    anchor="nw",
+    text="=",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 32 * -1)
+)
+
+entry_image_1 = PhotoImage(
+    file=relative_to_assets("entry_1.png"))
+entry_bg_1 = canvas.create_image(
+    587.0,
+    218.0,
+    image=entry_image_1
+)
+entry_1 = Entry(
+    bd=0,
+    bg="#FFFFFF",
+    fg="#000716",
+    highlightthickness=0
+)
+entry_1.place(
+    x=527.0,
+    y=204.0,
+    width=120.0,
+    height=26.0
+)
+
+entry_image_2 = PhotoImage(
+    file=relative_to_assets("entry_2.png"))
+entry_bg_2 = canvas.create_image(
+    587.0,
+    323.0,
+    image=entry_image_2
+)
+entry_2 = Entry(
+    bd=0,
+    bg="#FFFFFF",
+    fg="#000716",
+    highlightthickness=0
+)
+entry_2.place(
+    x=527.0,
+    y=239.0,
+    width=120.0,
+    height=26.0
+)
+
+entry_image_3 = PhotoImage(
+    file=relative_to_assets("entry_3.png"))
+entry_bg_3 = canvas.create_image(
+    587.0,
+    288.0,
+    image=entry_image_3
+)
+entry_3 = Entry(
+    bd=0,
+    bg="#FFFFFF",
+    fg="#000716",
+    highlightthickness=0
+)
+entry_3.place(
+    x=527.0,
+    y=274.0,
+    width=120.0,
+    height=26.0
+)
+
+entry_image_4 = PhotoImage(
+    file=relative_to_assets("entry_4.png"))
+entry_bg_4 = canvas.create_image(
+    587.0,
+    253.0,
+    image=entry_image_4
+)
+entry_4 = Entry(
+    bd=0,
+    bg="#FFFFFF",
+    fg="#000716",
+    highlightthickness=0
+)
+entry_4.place(
+    x=527.0,
+    y=309.0,
+    width=120.0,
+    height=26.0
+)
+
+canvas.create_rectangle(
+    747.0,
+    433.0,
+    790.0,
+    461.0,
+    fill="#0047FF",
+    outline="")
+
+canvas.create_rectangle(
+    747.0,
+    503.0,
+    790.0,
+    531.0,
+    fill="#0047FF",
+    outline="")
+
+canvas.create_rectangle(
+    747.0,
+    468.0,
+    790.0,
+    496.0,
+    fill="#0047FF",
+    outline="")
+
+canvas.create_text(
+    805.0,
+    428.0,
+    anchor="nw",
+    text="=",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 32 * -1)
+)
+
+canvas.create_text(
+    805.0,
+    498.0,
+    anchor="nw",
+    text="=",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 32 * -1)
+)
+
+canvas.create_text(
+    805.0,
+    463.0,
+    anchor="nw",
+    text="=",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 32 * -1)
+)
+
+entry_image_5 = PhotoImage(
+    file=relative_to_assets("entry_5.png"))
+entry_bg_5 = canvas.create_image(
+    896.0,
+    447.0,
+    image=entry_image_5
+)
+entry_5 = Entry(
+    bd=0,
+    bg="#FFFFFF",
+    fg="#000716",
+    highlightthickness=0
+)
+entry_5.place(
+    x=836.0,
+    y=433.0,
+    width=120.0,
+    height=26.0
+)
+
+entry_image_6 = PhotoImage(
+    file=relative_to_assets("entry_6.png"))
+entry_bg_6 = canvas.create_image(
+    896.0,
+    517.0,
+    image=entry_image_6
+)
+entry_6 = Entry(
+    bd=0,
+    bg="#FFFFFF",
+    fg="#000716",
+    highlightthickness=0
+)
+entry_6.place(
+    x=836.0,
+    y=503.0,
+    width=120.0,
+    height=26.0
+)
+
+entry_image_7 = PhotoImage(
+    file=relative_to_assets("entry_7.png"))
+entry_bg_7 = canvas.create_image(
+    896.0,
+    482.0,
+    image=entry_image_7
+)
+entry_7 = Entry(
+    bd=0,
+    bg="#FFFFFF",
+    fg="#000716",
+    highlightthickness=0
+)
+entry_7.place(
+    x=836.0,
+    y=468.0,
+    width=120.0,
+    height=26.0
+)
+
+canvas.create_rectangle(
+    137.0,
+    437.0,
+    180.0,
+    465.0,
+    fill="#0047FF",
+    outline="")
+
+canvas.create_rectangle(
+    137.0,
+    507.0,
+    180.0,
+    535.0,
+    fill="#0047FF",
+    outline="")
+
+canvas.create_rectangle(
+    137.0,
+    472.0,
+    180.0,
+    500.0,
+    fill="#0047FF",
+    outline="")
+
+canvas.create_text(
+    195.0,
+    432.0,
+    anchor="nw",
+    text="=",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 32 * -1)
+)
+
+canvas.create_text(
+    195.0,
+    502.0,
+    anchor="nw",
+    text="=",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 32 * -1)
+)
+
+canvas.create_text(
+    195.0,
+    467.0,
+    anchor="nw",
+    text="=",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 32 * -1)
+)
+
+entry_image_8 = PhotoImage(
+    file=relative_to_assets("entry_8.png"))
+entry_bg_8 = canvas.create_image(
+    286.0,
+    451.0,
+    image=entry_image_8
+)
+entry_8 = Entry(
+    bd=0,
+    bg="#FFFFFF",
+    fg="#000716",
+    highlightthickness=0
+)
+entry_8.place(
+    x=226.0,
+    y=507.0,
+    width=120.0,
+    height=26.0
+)
+
+entry_image_9 = PhotoImage(
+    file=relative_to_assets("entry_9.png"))
+entry_bg_9 = canvas.create_image(
+    286.0,
+    521.0,
+    image=entry_image_9
+)
+entry_9 = Entry(
+    bd=0,
+    bg="#FFFFFF",
+    fg="#000716",
+    highlightthickness=0
+)
+entry_9.place(
+    x=226.0,
+    y=437.0,
+    width=120.0,
+    height=26.0
+)
+
+entry_image_10 = PhotoImage(
+    file=relative_to_assets("entry_10.png"))
+entry_bg_10 = canvas.create_image(
+    286.0,
+    486.0,
+    image=entry_image_10
+)
+entry_10 = Entry(
+    bd=0,
+    bg="#FFFFFF",
+    fg="#000716",
+    highlightthickness=0
+)
+entry_10.place(
+    x=226.0,
+    y=472.0,
+    width=120.0,
+    height=26.0
+)
+
+canvas.create_text(
+    712.0,
+    382.0,
+    anchor="nw",
+    text="Joint Variable",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 32 * -1)
+)
+
+canvas.create_text(
+    150.0,
+    382.0,
+    anchor="nw",
+    text="Position Vector",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 32 * -1)
+)
+
+image_image_2 = PhotoImage(
+    file=relative_to_assets("image_2.png"))
+image_2 = canvas.create_image(
+    239.0,
+    267.0,
+    image=image_image_2
+)
+
+image_image_3 = PhotoImage(
+    file=relative_to_assets("image_3.png"))
+image_3 = canvas.create_image(
+    875.0,
+    266.0,
+    image=image_image_3
+)
+
+text = "CartesianManipulator"
+font = ("Kodchasan Medium", 45)
+x, y = 230.0, 20.0 
+for char in text:
+    if char in ['C', 'M']:
+        color = 'red'
+    else:
+        color = '#FFFFFF'
+
+    text_id = canvas.create_text(x, y, anchor="nw", text=char, fill=color, font=font)
+    bbox = canvas.bbox(text_id)
+    text_width = bbox[2] - bbox[0]
+    x += text_width
+
+
+canvas.create_text(
+    447.0,
+    205.0,
+    anchor="nw",
+    text="a1",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    447.0,
+    274.0,
+    anchor="nw",
+    text="a3",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    447.0,
+    308.0,
+    anchor="nw",
+    text="a4",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    447.0,
+    240.0,
+    anchor="nw",
+    text="a2",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    650.0,
+    206.0,
+    anchor="nw",
+    text="cm",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    352.0,
+    440.0,
+    anchor="nw",
+    text="cm",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    352.0,
+    510.0,
+    anchor="nw",
+    text="cm",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    352.0,
+    475.0,
+    anchor="nw",
+    text="cm",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    960.0,
+    439.0,
+    anchor="nw",
+    text="cm",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    960.0,
+    509.0,
+    anchor="nw",
+    text="cm",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    960.0,
+    474.0,
+    anchor="nw",
+    text="cm",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    650.0,
+    314.0,
+    anchor="nw",
+    text="cm",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    650.0,
+    278.0,
+    anchor="nw",
+    text="cm",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    650.0,
+    242.0,
+    anchor="nw",
+    text="cm",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    146.0,
+    438.0,
+    anchor="nw",
+    text="X",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    146.0,
+    507.0,
+    anchor="nw",
+    text="Z",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    146.0,
+    473.0,
+    anchor="nw",
+    text="Y",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    350.0,
+    89.0,
+    anchor="nw",
+    text="Forward and Reverse Kinematics Calculator",
+    fill="#FFFFFF",
+    font=("Commissioner Regular", 20 * -1)
+)
+
+canvas.create_text(
+    763.0,
+    435.0,
+    anchor="nw",
+    text="d1",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    763.0,
+    470.0,
+    anchor="nw",
+    text="d2",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
+canvas.create_text(
+    763.0,
+    504.0,
+    anchor="nw",
+    text="d3",
+    fill="#FFFFFF",
+    font=("LibreBodoniRoman Regular", 24 * -1)
+)
+
 
 def f_k():
 
     # link lengths in cm
-    a1=float(a1_E.get())/100
-    a2=float(a2_E.get())/100
-    a3=float(a3_E.get())/100
-    a4=float(a4_E.get())/100
+    a1 = float(entry_1.get())/100
+    a2 = float(entry_2.get())/100
+    a3 = float(entry_3.get())/100
+    a4 = float(entry_4.get())/100
 
     # joint variables: is mm if f, is degrees if theta
-    d1=float(d1_E.get())/100
-    d2=float(d2_E.get())/100
-    d3=float(d3_E.get())/100
+    d1 = float(entry_5.get())/100
+    d2 = float(entry_6.get())/100
+    d3 = float(entry_7.get())/100
 
     # Parametric Table (theta, alpha, r, d)
     PT = [[(0.0/180.0)*np.pi,(270.0/180.0)*np.pi,0,a1],
@@ -86,16 +726,16 @@ def f_k():
     H0_4 = np.dot(H0_2,H2_4)
     
     X0_4 = H0_4[0,3]
-    X_E.delete(0,END)
-    X_E.insert(0,np.around(X0_4*100,3))
+    entry_10.delete(0,END)
+    entry_10.insert(0,np.around(X0_4*100,3))
     
     Y0_4 = H0_4[1,3]
-    Y_E.delete(0,END)
-    Y_E.insert(0,np.around(Y0_4*100,3))
+    entry_9.delete(0,END)
+    entry_9.insert(0,np.around(Y0_4*100,3))
     
     Z0_4 = H0_4[2,3]
-    Z_E.delete(0,END)
-    Z_E.insert(0,np.around(Z0_4*100,3))
+    entry_8.delete(0,END)
+    entry_8.insert(0,np.around(Z0_4*100,3))
 
 
 
@@ -124,25 +764,39 @@ def f_k():
     # Plot commands
     CARTESIAN.plot(q1,limits=[x1,x2,y1,y2,z1,z2],block=True)
 
-    ################################################################
-    ################################################################
-    ################################################################
+button_image_2 = PhotoImage(
+    file=relative_to_assets("button_2.png"))
+button_2 = Button(
+    image=button_image_2,
+    text="Forward",
+    compound="center",
+    fg="white",
+    font=("LibreBodoniRoman Regular", 24 * -1),
+    borderwidth=0,
+    highlightthickness=0,
+    command=f_k,
+    relief="flat"
+)
+button_2.place(
+    x=745.0,
+    y=577.0,
+    width=255.0,
+    height=64.0
+)
 
-# INVERSE KINEMATICS
-    
 def i_k():
     #Inverse Kinematics Using Graphical Method
 
     #link lengths in cm
-    a1 = float(a1_E.get())
-    a2 = float(a2_E.get())
-    a3 = float(a3_E.get())
-    a4 = float(a4_E.get())
+    a1 =float(entry_1.get())
+    a2 =float(entry_2.get())
+    a3 =float(entry_3.get())
+    a4 =float(entry_4.get())
 
     #Position Vector in cm
-    xe = float(X_E.get())
-    ye = float(Y_E.get())
-    ze = float(Z_E.get())
+    xe = float(entry_8.get())
+    ye = float(entry_9.get())
+    ze = float(entry_10.get())
 
     # To solve for D2
     d2 = xe-a3
@@ -154,14 +808,14 @@ def i_k():
     d1 = ye-a2
 
 
-    d1_E.delete(0,END)
-    d1_E.insert(0,np.around(d1,3))
+    entry_7.delete(0,END)
+    entry_7.insert(0,np.around(d1,3))
 
-    d2_E.delete(0,END)
-    d2_E.insert(0,np.around(d2,3))
+    entry_6.delete(0,END)
+    entry_6.insert(0,np.around(d2,3))
 
-    d3_E.delete(0,END)
-    d3_E.insert(0,np.around(d3,3))
+    entry_5.delete(0,END)
+    entry_5.insert(0,np.around(d3,3))
 
     # Create Links (d,r,alpha,offset)
     
@@ -187,119 +841,63 @@ def i_k():
      # Plot commands
     CARTESIAN.plot(q1,limits=[x1,x2,y1,y2,z1,z2],block=True)
 
-
-
-# Link Lengths and Joint Variables Frame
-FI = LabelFrame(gui,text="Link Lengths and Joint Variables",font=(5))
-FI.grid(row=0,column=0)
-
-# Link length
-a1 = Label(FI,text=('a1 = '),font=(10))
-a1_E = Entry(FI,width=5,font=(10))
-cm1 = Label(FI,text=('cm '),font=(10),bg='yellow')
-
-a2 = Label(FI,text=('a2 = '),font=(10))
-a2_E = Entry(FI,width=5,font=(10))
-cm2 = Label(FI,text=('cm '),font=(10),bg='yellow')
-
-a3 = Label(FI,text=('a3 = '),font=(10))
-a3_E = Entry(FI,width=5,font=(10))
-cm3 = Label(FI,text=('cm '),font=(10),bg='yellow')
-
-a4 = Label(FI,text=('a4 = '),font=(10))
-a4_E = Entry(FI,width=5,font=(10))
-cm4 = Label(FI,text=('cm '),font=(10),bg='yellow')
-
-a1.grid(row=0,column=0)
-a1_E.grid(row=0,column=1)
-cm1.grid(row=0,column=2)
-
-a2.grid(row=1,column=0)
-a2_E.grid(row=1,column=1)
-cm2.grid(row=1,column=2)
-
-a3.grid(row=2,column=0)
-a3_E.grid(row=2,column=1)
-cm3.grid(row=2,column=2)
-
-a4.grid(row=3,column=0)
-a4_E.grid(row=3,column=1)
-cm4.grid(row=3,column=2)
-
-# Joint variable labels
-
-d1 = Label(FI,text=("d1 = "),font=(10))
-d1_E = Entry(FI,width=5,font=(10))
-cm7 = Label(FI,text=("cm"),font=(10),bg='yellow')
-
-d2 = Label(FI,text=("d2 = "),font=(10))
-d2_E = Entry(FI,width=5,font=(10))
-cm8 = Label(FI,text=("cm"),font=(10),bg='yellow')
-
-d3 = Label(FI,text=("d3 = "),font=(10))
-d3_E = Entry(FI,width=5,font=(10))
-cm9 = Label(FI,text=("cm"),font=(10),bg='yellow')
-
-
-d1.grid(row=0,column=3)
-d1_E.grid(row=0,column=4)
-cm7.grid(row=0,column=5)
-
-d2.grid(row=1,column=3)
-d2_E.grid(row=1,column=4)
-cm8.grid(row=1,column=5)
-
-d3.grid(row=2,column=3)
-d3_E.grid(row=2,column=4)
-cm9.grid(row=2,column=5)
-
-# Buttons frame
-
-BF = LabelFrame(gui,text='Forward & Inverse Kinematics',font=(5))
-BF.grid(row=1,column=0)
-
-
-# Buttons
-FK = Button(BF,text='Forward',font=(10),bg='blue',fg='white',command=f_k)
-rst = Button(BF,text='RESET',font=(10),bg='red',fg='white',command=reset)
-IK = Button(BF,text='Inverse',font=(10),bg='blue',fg='white',command=i_k)
-
-FK.grid(row=0,column=0)
-rst.grid(row=0,column=1)
-IK.grid(row=0,column=2)
-
-# Position Vector Frame
-PV = LabelFrame(gui,text='Position Vector',font=(5))
-PV.grid(row=2,column=0)
-
-X = Label(PV,text='X =',font=(10))
-X_E = Entry(PV,width=5,font=10)
-cm6 = Label(PV,text=('cm '),font=(10),bg='yellow',fg='black')
-
-Y = Label(PV,text='Y =',font=(10))
-Y_E = Entry(PV,width=5,font=10)
-cm7 = Label(PV,text=('cm '),font=(10),bg='yellow',fg='black')
-
-Z = Label(PV,text='Z =',font=(10))
-Z_E = Entry(PV,width=5,font=10)
-cm8 = Label(PV,text=('cm '),font=(10),bg='yellow',fg='black')
-
-
-X.grid(row=0,column=0)
-X_E.grid(row=0,column=1)
-cm6.grid(row=0,column=2)
-
-Y.grid(row=1,column=0)
-Y_E.grid(row=1,column=1)
-cm7.grid(row=1,column=2)
-
-Z.grid(row=2,column=0)
-Z_E.grid(row=2,column=1)
-cm8.grid(row=2,column=2)
+button_image_1 = PhotoImage(
+    file=relative_to_assets("button_1.png"))
+button_1 = Button(
+    image=button_image_1,
+    text="Inverse",
+    compound="center",
+    fg="white",
+    font=("LibreBodoniRoman Regular", 24 * -1),
+    borderwidth=0,
+    highlightthickness=0,
+    command=i_k,
+    relief="flat"
+)
+button_1.place(
+    x=115.0,
+    y=577.0,
+    width=255.0,
+    height=64.0
+)
 
 
 
+def reset():
+    
+    entry_1.delete(0,END)
+    entry_2.delete(0,END)
+    entry_3.delete(0,END)
+    entry_4.delete(0,END)
+    entry_5.delete(0,END)
+    entry_6.delete(0,END)
+    entry_7.delete(0,END)
+    entry_8.delete(0,END)
+    entry_9.delete(0,END)
+    entry_10.delete(0,END)
+
+button_image_3 = PhotoImage(
+    file=relative_to_assets("button_3.png"))
+button_3 = Button(
+    image=button_image_3,
+    text="Reset",
+    compound="center",
+    fg="white",
+    font=("LibreBodoniRoman Regular", 24 * -1),
+    borderwidth=0,
+    highlightthickness=0,
+    command=reset,
+    relief="flat"
+)
 
 
 
-gui.mainloop()
+button_3.place(
+    x=429.0,
+    y=464.0,
+    width=255.0,
+    height=64.0
+)
+window.resizable(False, False)
+window.mainloop()
+
