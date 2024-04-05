@@ -130,4 +130,122 @@ ___
 </p>
 <br>
 
+## IV. Kinematic Diagram and D-H Frame
+<p align="center">
+  <img src=https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Gif%20%26%20GUI/image_processing20190916-29947-1vc8bjz.gif style="height: 300px; float: left;">
+ </p>  
+
+  <p align="justify"> 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A <b><i>Kinematic Diagram</i></b> is a simplified representation of a mechanism that illustrates the motion of all the components without showing the forces or the physical dimensions that cause the motion. It is an important tool used in mechanical engineering to examine the motion of mechanisms. Typically, the diagram shows the mechanism's joints and links in schematic form. It is also a diagram that shows how the links and joints are connected together when all of the joint variables have a value of 0.
+</p>
+<br>
+
+  <p align="justify"> 
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>Links</i></b> are the rigid parts of the mechanical manipulator. A link is defined as a single part that can be a resistant body or a composite of resistant bodies with inflexible connections and relative motion in relation to other machine components. Also, joints are considered links and the values are constant:</p>
+    
+  - If it is revolute or twisting, links are drawn from the center of the rotation.
+  - If it is prismatic, either linear or orthogonal, links are drawn from the center of translation.
+  - If it is from base, links are drawn from the center of gravity.
+    
+<br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <b><i>Joint Variables</i></b>, are the values that change when the joint moves. It is a connection between two or more links that allows for some motion, or potential motion, between them.  Joints are sometimes known as <b><i>kinematic pairs</i></b>. A joint variable has a two indicator which is the rotation of a counterclockwise arrow &#8634; and the arrow with the flat line at the tail &#8614;. We use this symbol &#8634; for the twisting and revolute joint and we label it as <b><i>theta</i></b> ($&theta;$) , theta is the rotation angle of the circle. While in a prismatic joint we use this symbol &#8614; and label it as $d$, $d$ is the translation length. Remember that in joint variables, the numbering of joints will be based on their consecutive order.
+</p>
+<br>
+
+
+
+### D-H Frame Assignment
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>D-H Notation</i></b> was introduced by <b>Jacques Denavit</b> and <b>Richard Hartenberg</b> in <b>1955</b> in order to standardize the coordinate frames for spatial linkages. D-H notation is used to solve the forward kinematics of a mechanical manipulator. The <b><i>Frames</i></b> in a Mechanical Manipulator are used to determine where they are and where they need to go. It also shows the movement of our mechanical manipulator. The frames are positioned at each part of the mechanical manipulator, including the base, joints, and end effector.</p>
+
+#### Three Types of Frames used in Mechanical Manipulator:
+  - Base (World) Frame
+  - User Frame
+  - Tool Frame
+<br>
+
+<p align="center">
+  <img src=https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Gif%20%26%20GUI/ddsadasdassdadas.gif style="height: 300px; float: left;">
+ </p> 
  
+<b><i>D-H Frame Assignment</i></b> follow this rules in assigning frames in a kinematic diagram:
+  - **Rule 1**: The z axis must be the axis of rotation for a revolute/twisting joint, or the direction of translation for a prismatic joint.
+  - **Rule 2**: The x axis must be perpendicular both to its own Z axis, and the Z axis of the frame before it.
+  - **Rule 3**: Each axis must intersect the z axis of the frame before it. The rules for complying rule 3:
+      - Rotate the axis until it hits the other.
+      - Translate the axis until it hits the other.
+  - **Rule 4**: All frames must follow the right hand rule. 
+<br>
+<p align="right">
+  <img src=https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/rhr_xyz.png style="height: 300px;">
+ </p>
+
+### Applying D-H Frame Rules to the Kinematic Diagram of a Cartesian Manipulator
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To establish the kinematic chain of our manipulator with prismatic joints, we begin by identifying key frames: the base frame, user frame, and tool frame or end effector. Link lengths between frames are labeled sequentially as A1, A2, and so forth. Using the arrow symbol ↦ to denote translation direction (labeled as 'd'), we start at frame 0 (base frame) and progress to the tool frame. Z-axes are aligned with the prismatic joint's translation direction, and X-axes are positioned perpendicular to both their Z-axis and the preceding frame's Z-axis. Y-axes are determined following the right-hand rule. Aligning the last frame's axis of rotation with the previous frame's simplifies calculations, especially for the tool frame.
+</p>
+<br>
+
+## V. D-H Parametric Table
+
+#### Steps in Denavit-Hartenberg Notation
+  1.  Assign the frames according to the 4 D-H Frame Rules.
+  2.  Construct and fill out the D-H Parametric Table.
+  3.  Plug the table into the Homogeneous Transformation Matrix form.
+  4.  Multiply the matrices together.
+<br>
+
+
+<p align="center"> <b>Example of D-H Parametric Table</b> </p>
+
+<div align="center">
+  
+| $n$   | $\theta$ | $\alpha$ |    $r$    |    $d$    |
+| :---: |  :---:  |  :---:  |  :---:  |  :---:  |   
+|   1   |         |         |         |         |
+|   2   |         |         |         |         |
+|   3   |         |         |         |         |
+|   4   |         |         |         |         |
+
+</div>
+<br>
+
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  The <b><i>Four Parameters</i></b> in the D-H Parametric are  $&theta;$, $&alpha;$ $r$ and $d$. The $&theta;$ and the $&alpha;$ are the rotation or orientation parameters and their units are in degrees or radian. While $d$ and $r$ are the position or translation parameters and their units are in units of length.
+  </p>
+<br>
+
+
+<div align="center">
+  
+| $\theta$ | $\alpha$ | $d$ | $r$ |
+|     :---:     |     :---:     |     :---:    |     :---:     
+|  " $\theta$ " is the rotation around $z_{n-1}$ that is required to get $x_{n-1}$ to match $x_{n}$, with the joint variable theta if the joint is a revolute or twisting joint.  |   " $\alpha$ " is the rotation around $x_{n}$ that is required to match $z_{n-1}$ to $z_{n}$.  |  " $d$ " is the distance from the origin of $n-1$ and $n$ frames along the $z_{n-1}$ direction with the joint variable if the joint is prismatic.  |  " $r$ " is the distance from the origin of $n-1$ and $n$ frames along the $x_{n}$ direction.  |
+
+</div>
+<br>
+
+
+### D-H Parametric Table for a Cartesian Manipulator
+
+ <p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  The D-H (Denavit-Hartenberg) Parametric Table is a systematic approach for organizing the four essential parameters—theta, alpha, r, and d, required to describe the kinematics of a robotic manipulator. Theta denotes the joint angle between the current and next link, with 0 degrees for Theta 1 as it aligns perpendicular to the next frame's x-axis. Theta 2 and Theta 3 are 270 and 90 degrees, respectively, aligning with their respective x-axes. Alpha represents the offset angle between the z-axes of consecutive frames, with values such as 270 degrees for Alpha 1 to match the next frame's z-axis. Parameter r signifies the distance from one frame's origin to the next along the x-axis, and since the frames are typically coincident, r values are 0. Lastly, d indicates the distance between frame origins along the z-axis, with d1 being A1 for the base frame and subsequent di values being perpendicular to their link lengths. Completing this table for each link provides a concise representation of the manipulator's geometry, crucial for deriving the homogeneous transformation matrices that define its end-effector's position and orientation based on joint variables.
+  </p>
+<br>
+
+
+ 
+## VI. Homogeneous Transformation Matrix
+
+<p align="left">
+  <img src=https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Gif%20%26%20GUI/giphy.gif style="height: 300px; float: left;">
+ </p>
+ 
+<p align="justify"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b><i>Homogeneous Transformation Matrix</i></b> is a crucial concept in robotics, encompassing both rotation and translation within the same matrix to describe an object's position and orientation. Unlike rotation matrices, which can be multiplied to combine rotations, position vectors cannot be added or multiplied directly. To handle both rotation and translation, we use the homogeneous transformation matrix denoted as $H_{n}^{n-1}$ or $T_{n}^{n-1}$, which combines a 3x3 rotation matrix and a 3x1 position vector into a 3x4 matrix. However, to maintain a square matrix, an augmentation row is added at the bottom, resulting in a 4x4 matrix. This matrix notation allows us to efficiently represent and calculate the position and orientation of objects in robotic systems, facilitating complex manipulations and control algorithms.
+</p>
+<br> 
