@@ -316,10 +316,6 @@ The Forward Button will only function correctly if there are values in the textb
   <img src="pic here" style="height: 200px; float: left;">
  </p>
 
-
-<p align="left">
-  <img src="pic here" style="height: 200px; float: left;">
- </p>
  
  <div style="text-align: left">
    
