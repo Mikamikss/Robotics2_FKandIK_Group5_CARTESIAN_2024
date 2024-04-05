@@ -119,10 +119,10 @@ The history of the D-H frame assignment dates back to the work of Jacques Denavi
   
 |  n   |  θ   |  α   |  r  |  d  |
 | :--: | :--: | :--: | :-: | :-: |   
-|  1   |  0°  | 270° |  0  |  A1 |
-|  2   | 270° | 270° |  0  |A2+d1|
-|  3   |  90° | 270° |  0  |A3+d2|
-|  4   |  0°  |  0°  |  0  |A4+d3|
+|  1   |  0°  | 270° |  0  |  a1 |
+|  2   | 270° | 270° |  0  |a2+d1|
+|  3   |  90° | 270° |  0  |a3+d2|
+|  4   |  0°  |  0°  |  0  |a4+d3|
 
 </div>
 <br>
