@@ -134,14 +134,14 @@ The D-H (Denavit-Hartenberg) Parametric Table organizes four key parameters cruc
 ### VI :notebook: Homogeneous Transformation Matrix
 
 <p align="center">
-  <img src=https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Gif%20%26%20GUI/tumblr_77c9c5851d894930ec22b6ec95a57c71_f5a04dc5_400.gif style="height: 900px; float: left;">
+  <img src=https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Gif%20%26%20GUI/tumblr_77c9c5851d894930ec22b6ec95a57c71_f5a04dc5_400.gif style="height: 300px; float: left;">
  </p>
  
 <p align="justify">
     In a Cartesian manipulator, the Homogeneous Transformation Matrix (HTM) is a mathematical tool used to represent the position and orientation of the end-effector relative to the base frame. It's a 4x4 matrix that combines both rotation and translation information in a single representation. Each element of the matrix corresponds to a specific transformation component, such as rotation angles and translation distances along the x, y, and z axes.
     
 
-<p align="left"><b>Homogeneous Transformation Matrix Formula</b>
+<p align="center"><b>Homogeneous Transformation Matrix Formula</b>
  
   $$
 H_{n}^{n-1} =
@@ -153,6 +153,9 @@ $$
 
 Obtaining the Homogeneous Transformation Matrix Formula Computed Method
 
+<p align="center">
+  The Homogeneous Transformation Matrix $H_{1}^{0}$ represents the transformation from coordinate frame 1 to coordinate frame 0. It describes both the translation and rotation between the two frames. In this specific example, $H_{1}^{0}$ represents a translation along the z-axis by a distance of $a1$, while maintaining the orientation of frame 1 relative to frame 0.
+  
 $$
 H_{1}^{0} =
 \begin{bmatrix}
@@ -162,22 +165,44 @@ H_{1}^{0} =
 0 & 0 & 0 & 1
 \end{bmatrix}
 $$
-</div>
 
-<div style="text-align: right">
+The Homogeneous Transformation Matrix presents the transformation from coordinate frame 2 to coordinate frame 1. In this matrix, there is a rotation of -90 degrees about the x-axis and a translation along the z-axis by a distance of $H_{1}^{0}$ a2+d1. This means that the orientation of frame 2 relative to frame 1 is changed, and frame 2 is shifted upward along the z-axis by the sum of $a2+d1$.
+
 
 $$
 H_{2}^{1} =
 \begin{bmatrix}
-1 & 0 & 0 & 0 \\
-0 & 1 & 0 & 0 \\
-0 & -1 & 0 & a1 \\
+0 & 0 & 1 & 0 \\
+-1 & 0 & 0 & 0 \\
+0 & -1 & 0 & a2+d1 \\
 0 & 0 & 0 & 1
 \end{bmatrix}
 $$
 
-</div>
+The Homogeneous Transformation Matrix $H_{3}^{2}$ describes the transformation from coordinate frame 3 to coordinate frame 2. This matrix involves a rotation of 90 degrees about the y-axis and a translation along the z-axis by a distance of $a3+d2$. As a result, the orientation of frame 3 relative to frame 2 is changed, and frame 3 is shifted upward along the z-axis by the sum of 
+$a3$ and $d2$.
 
+$$
+H_{3}^{2} =
+\begin{bmatrix}
+0 & 0 & -1 & 0 \\
+1 & 0 & 0 & 0 \\
+0 & -1 & 0 & a3+d2 \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+The Homogeneous Transformation Matrix $H_{4}^{3}$ represents the transformation from coordinate frame 4 to coordinate frame 3. In this matrix, there is no rotation, only a translation along the z-axis by a distance of $a4+d2$. This means that the orientation of frame 4 relative to frame 3 remains the same, and frame 4 is shifted upward along the z-axis by the sum of $a4$ and $d2$.
+
+$$
+H_{4}^{3} =
+\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & a4+d2 \\
+0 & 0 & 0 & 1
+\end{bmatrix}
+$$
 
 
 
