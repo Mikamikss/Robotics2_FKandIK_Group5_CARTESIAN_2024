@@ -206,6 +206,205 @@ $$
 
 
 
+### VII :nut_and_bolt: Development Environment
 
+
+
+
+### VIII :file_folder: CARTESIAN CALCULATOR GUI DESIGN:
+<p align="justify">
+  In creating the Cartesian Calculator, instead of using the old fashion way of designing, we came across a website called Figma. Figma is a Tkinter Designer that generates the code after designing the GUI. 
+
+<p align="center">Elements used:
+
+
+  
+1.<p align="left">
+  <img src="pic here" style="height: 200px; float: left;">
+ </p>
+
+<p align="center">In the design, the D-H Frame Assignment of Cartesian Robot (Manipulator) can be seen in the upper left side of the GUI. 
+
+2.<p align="left">
+  <img src="pic here" style="height: 200px; float: left;">
+ </p>
+
+
+<p align="center">In the design, the 3D view of the Cartesian Robot (Manipulator) from Matlab can be seen in the upper right side of the GUI. 
+
+3.<p align="left">
+  <img src="pic here" style="height: 200px; float: left;">
+ </p>>
+
+<p align="center">In the design, the 3D view of the Cartesian Robot (Manipulator) from Matlab can be seen in the upper right side of the GUI.
+
+
+
+FUNCTIONALITY: 
+
+Reset button
+<p align="left">
+  <img src="pic here" style="height: 200px; float: left;">
+ </p>
+
+<p align="left">The reset button functions as the reset of all entities in the text box. By clicking the Reset Button it  does its programmed functionality. 
+
+
+Inverse Button
+ <p align="left">
+  <img src="pic here" style="height: 200px; float: left;">
+ </p>
+ 
+<p align="left">The inverse button functions as the signal to compute the Joint Variable of the Cartesian Robot (manipulator). By clicking the Inverse Button it does its programmed functionality. 
+
+<p align="left">
+Note: 
+  The Inverse Button will only function correctly when you type numbers (0,1,2,3,4,5,6,...). 
+  The Inverse Button will only function correctly if there are values in the textboxes of Link Lengths and Position Vector.
+
+Forward Button
+ <p align="left">
+  <img src="pic here" style="height: 200px; float: left;">
+ </p>
+
+<p align="left"> 
+The forward button functions as the signal to compute the Position Vector of the Cartesian Robot (manipulator). By clicking the Inverse Button it does its programmed functionality.
+  
+<p align="left">
+Note: 
+The Forward Button will only function correctly when you type numbers (0,1,2,3,4,5,6,...). 
+The Forward Button will only function correctly if there are values in the textboxes of Link Lengths and Joint Variables
+
+ 
+<p align="left">Installation
+
+<p align="left">INSTALLATION GUIDE
+
+<div style="text-align: left">
+
+1. Download the zip file (paste the zipfile link here).
+2. Extract the zip file in your chosen destination folder.
+3. Open Virtual Studio Code in Ubuntu.
+4. In Virtual Studio Code, click File then Open Folder.
+
+</div>
+
+<p align="left">
+  <img src="pic here" style="height: 200px; float: left;">
+ </p>
+
+<div style="text-align: left">
+
+5. Open the unzipped file entitled “GUI”.
+6. After opening the folder, under “build” the code for the Cartesian Calculator GUI is attached.
+7. To run the program, first you must download the requirements.
+8. To do this, open terminal of the file named “requirement.txt”
+
+</div>
+
+<p align="left">
+  <img src="pic here" style="height: 200px; float: left;">
+ </p>
+
+<div style="text-align: left">
+  
+ 9. After opening requirements.txt, create a new terminal or use the shortcut Ctrl+Shift+’
+
+ </div>
+
+<p align="left">
+  <img src="pic here" style="height: 200px; float: left;">
+ </p>
+
+
+<p align="left">
+  <img src="pic here" style="height: 200px; float: left;">
+ </p>
+ 
+ <div style="text-align: left">
+   
+ 10. On the terminal, type “pip install -r requirements.txt” to install all the requirements in order to make the program run.
+ 
+ </div>
+
+<p align="left">
+  <img src="pic here" style="height: 200px; float: left;">
+ </p>
+
+ <div style="text-align: left">
+   
+ 11. After the installation finishes, open “gui.py” under the folder “build”. To do that, type in terminal “cd build/”.
+ 
+ </div>
+ 
+<p align="left">
+  <img src="pic here" style="height: 200px; float: left;">
+ </p>
+ 
+<div style="text-align: left">
+   
+ 12. Under /GUI/build$ run the program by typing in the terminal “python3 gui.py”
+ 
+ </div>
+
+<p align="left">
+  <img src="pic here" style="height: 200px; float: left;">
+ </p>
+ 
+ </div>
+
+
+
+ <div style="text-align: left">
+   
+ 13. After typing python3 gui.py, the Cartesian Calculator GUI will appear.
+ 
+ </div>
+ 
+<p align="left">
+  <img src="pic here" style="height: 200px; float: left;">
+ </p>
+
+<div style="text-align: left">
+   
+ 14. That’s all for the installation guide. Enjoy the Cartesian Calculator.
+ 
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+###  :hammer: Build
+
+
+### :rocket: Deployment
+
+
+## :cherry_blossom: Community
+
+
+###  :fire: Contribution
 
 
