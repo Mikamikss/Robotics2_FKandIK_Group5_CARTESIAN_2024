@@ -110,35 +110,6 @@ The history of the D-H frame assignment dates back to the work of Jacques Denavi
 <p align="right">
   <img src=https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/rhr_xyz.png style="height: 300px;">
  </p>
-### IV :package: Kinematic Diagram and D-H Frame
-
-<p align="center">
-  <img src=https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Gif%20%26%20GUI/image_processing20190916-29947-1vc8bjz.gif style="height: 300px; float: left;">
- </p>  
- 
-<p align="justify">
-A kinematic diagram is a schematic representation of the joints and links of a robotic manipulator, illustrating how they are connected and move relative to each other. It helps visualize the motion of the robot and is essential for analyzing its kinematics. The Denavit-Hartenberg (D-H) frame assignment is a method used to assign coordinate frames to each joint of a robot, enabling the description of its kinematics.
-
-<p align="justify">
-The D-H frame assignment involves four parameters: theta (θ), alpha (α), r, and d. Theta represents the rotation about the previous z-axis to align the x-axes, alpha represents the rotation about the x-axis to align the z-axes, r represents the distance along the previous z-axis to the common normal, and d represents the distance along the common normal to the next z-axis. These parameters are used to construct transformation matrices that describe the relationship between adjacent frames.
-  
-<p align="justify">
-The history of the D-H frame assignment dates back to the work of Jacques Denavit and Richard Hartenberg in the 1950s. They developed the D-H parameters as a standardized method for describing the kinematics of robotic manipulators, which has since become widely adopted in robotics. The D-H parameters provide a systematic and uniform approach to modeling robot kinematics, making it easier to analyze and control robotic systems.
-
-<p align="center">
-  <img src=https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Gif%20%26%20GUI/ddsadasdassdadas.gif style="height: 300px; float: left;">
- </p> 
- 
-**D-H Frame Assignment** follows these rules when assigning frames in a kinematic diagram:
-
-- **Rule 1**: The z-axis represents the axis of rotation for a revolute/twisting joint or the direction of translation for a prismatic joint.
-- **Rule 2**: The x-axis must be perpendicular to both its own z-axis and the z-axis of the preceding frame.
-- **Rule 3**: Each axis must intersect the z-axis of the preceding frame. This can be achieved by rotating or translating the axis to align with the z-axis.
-- **Rule 4**: Frames must follow the right-hand rule for consistency.
-
-<p align="right">
-  <img src=https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/rhr_xyz.png style="height: 300px;">
- </p>
 
 <p align="center"> <b> D-H Parametric Table of Cartesian Manipulator </b> </p>
 <div align="center">
@@ -154,7 +125,6 @@ The history of the D-H frame assignment dates back to the work of Jacques Denavi
 <br>
 
 <p align="justify"> 
-  
-  The D-H (Denavit-Hartenberg) Parametric Table organizes four key parameters crucial for describing a robotic manipulator's kinematics: theta, alpha, r, and d. Theta defines the joint angle between current and next links, indicating the rotation around the z-axis of the frame. For instance, Theta 1 is 0° as it aligns perpendicular to the x-axis of the subsequent frame. Alpha signifies the offset angle between z-axes of consecutive frames, with Alpha 1 at 270° for counterclockwise rotation to align with the next frame's z-axis. Parameter r represents the distance between origins of adjacent frames along the x-axis, resulting in all r values being 0 in this case. Lastly, d represents the distance along the z-axis from the origin of one frame to another, with d1 as A1 for the base frame and similar calculations for d2, d3, and d4. Completing this table for each link provides a concise description of the manipulator's geometry, crucial for computing homogeneous transformation matrices. These matrices determine the manipulator's end-effector position and orientation based on joint variables.
+The D-H (Denavit-Hartenberg) Parametric Table organizes four key parameters crucial for describing a robotic manipulator's kinematics: theta, alpha, r, and d. Theta defines the joint angle between current and next links, indicating the rotation around the z-axis of the frame. For instance, Theta 1 is 0° as it aligns perpendicular to the x-axis of the subsequent frame. Alpha signifies the offset angle between z-axes of consecutive frames, with Alpha 1 at 270° for counterclockwise rotation to align with the next frame's z-axis. Parameter r represents the distance between origins of adjacent frames along the x-axis, resulting in all r values being 0 in this case. Lastly, d represents the distance along the z-axis from the origin of one frame to another, with d1 as A1 for the base frame and similar calculations for d2, d3, and d4. Completing this table for each link provides a concise description of the manipulator's geometry, crucial for computing homogeneous transformation matrices. These matrices determine the manipulator's end-effector position and orientation based on joint variables.
 
 
