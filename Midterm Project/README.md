@@ -206,7 +206,9 @@ $$
 
 
 
-### VII :nut_and_bolt: Development Environment
+### VII :nut_and_bolt: Inverse Kinematics
+
+<p align="justify"> 
 
 
 
@@ -392,15 +394,13 @@ The Forward Button will only function correctly if there are values in the textb
 
 
  
-###  :hammer: Build
+ 
+### IX :hammer:References
 
 
-### :rocket: Deployment
-
-
-## :cherry_blossom: Community
-
-
-###  :fire: Contribution
-
-
+### X :rocket: Group Members
+- Baylon, Aron James M.
+- Espina,  
+- Cabarrubia, 
+- Punzalan, 
+- , CHristian Kent
