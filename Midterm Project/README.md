@@ -275,13 +275,10 @@ In the top view analysis of the Cartesian manipulator, our attention shifts to t
 
 **FUNCTIONALITY:**
 
-<center>
+<p align="center">Reset button</p>
 
-### Reset button
-
-</center>
   
-<p align="center">
+<p align=" center ">
   <a href="https://youtu.be/ZagkoxZFLTo">
     <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF1.png?raw=true" alt="Click to watch video" width="300">
   </a>
@@ -291,15 +288,9 @@ In the top view analysis of the Cartesian manipulator, our attention shifts to t
 <p align="left">The reset button functions as the reset of all entities in the text box. By clicking the Reset Button it  does its programmed functionality. 
 
 
-<div
-  align="justify">&nbsp;</div>
+  
+<p align="center">Inverse Button</p>
 
-
-<center>
-
-### Inverse Button
-
-</center>
 
 
 <p align="center">
@@ -318,11 +309,8 @@ Note:
   The Inverse Button will only function correctly if there are values in the textboxes of Link Lengths and Position Vector.
 
 
-<center>
 
-### Forward Button
-
-</center>
+<p align="center">Forward Button</p>
 
 
 <p align="center">
