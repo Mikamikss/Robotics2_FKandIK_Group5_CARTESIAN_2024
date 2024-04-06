@@ -357,9 +357,6 @@ The Forward Button will only function correctly if there are values in the textb
 
 </div>
 
-<p align="left">
-  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS8.png?raw=true" style="height: 200px; float: left;">
- </p>
 
   
 <div style="text-align: left">
@@ -369,9 +366,10 @@ The Forward Button will only function correctly if there are values in the textb
  </div>
 
 <p align="left">
-  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS10.png?raw=true" style="height: 200px; float: left;">
+  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS8.png?raw=true" style="height: 200px; float: left;">
  </p>
- 
+
+
  <div style="text-align: left">
    
  9. After opening requirements.txt, create a new terminal or use the shortcut Ctrl+Shift+’
@@ -379,7 +377,7 @@ The Forward Button will only function correctly if there are values in the textb
  </div>
 
 <p align="left">
-  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS11.png?raw=true" style="height: 200px; float: left;">
+  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS10.png?raw=true" style="height: 200px; float: left;">
  </p>
  
 
@@ -390,7 +388,10 @@ The Forward Button will only function correctly if there are values in the textb
  
  </div>
  
-
+<p align="left">
+  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS11.png?raw=true" style="height: 200px; float: left;">
+ </p>
+ 
  
 <div style="text-align: left">
    
