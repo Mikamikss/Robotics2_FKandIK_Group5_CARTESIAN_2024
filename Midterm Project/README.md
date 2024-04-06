@@ -276,7 +276,7 @@ In the top view analysis of the Cartesian manipulator, our attention shifts to t
 
 
 
-### VIII :file_folder: CARTESIAN CALCULATOR GUI DESIGN:
+### VIII :file_folder: Forward and Inverse Kinematics GUI Calculator:
 <p align="justify">
   In creating the Cartesian Calculator, instead of using the old fashion way of designing, we came across a website called Figma. Figma is a Tkinter Designer that generates the code after designing the GUI. 
 
