@@ -217,8 +217,8 @@ $$
 <p align="justify">
   In creating the Cartesian Calculator, instead of using the old fashion way of designing, we came across a website called Figma. Figma is a Tkinter Designer that generates the code after designing the GUI. 
 
-<p align="left">
-  <img src="Midterm Project/Pictures/UNDER INTRO.png" style="height: 200px; float: left;">
+<p align="center">
+  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/UNDER%20INTRO.png style="height: 300px;">
  </p>
 
 <p align="center">Elements used:
@@ -226,23 +226,23 @@ $$
 
   
 1.<p align="left">
-  <img src="Midterm Project/Pictures/CCC1.png" style="height: 200px; float: left;">
+  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/CCC1.png style="height: 300px;">
  </p>
 
-<p align="center">In the design, the D-H Frame Assignment of Cartesian Robot (Manipulator) can be seen in the upper left side of the GUI. 
+<p align="left">In the design, the D-H Frame Assignment of Cartesian Robot (Manipulator) can be seen in the upper left side of the GUI. 
 
 2.<p align="left">
-  <img src="Midterm Project/Pictures/CCC2.png" style="height: 200px; float: left;">
+  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/CCC2.png style="height: 300px;">
  </p>
 
 
-<p align="center">In the design, the 3D view of the Cartesian Robot (Manipulator) from Matlab can be seen in the upper right side of the GUI. 
+<p align="left">In the design, the 3D view of the Cartesian Robot (Manipulator) from Matlab can be seen in the upper right side of the GUI. 
 
 3.<p align="left">
-  <img src="pic here" style="height: 200px; float: left;">
- </p>>
+  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/CCC3.png style="height: 300px;">
+ </p>
 
-<p align="center">In the design, the 3D view of the Cartesian Robot (Manipulator) from Matlab can be seen in the upper right side of the GUI.
+<p align="left">In the design, the 3D view of the Cartesian Robot (Manipulator) from Matlab can be seen in the upper right side of the GUI.
 
 
 
