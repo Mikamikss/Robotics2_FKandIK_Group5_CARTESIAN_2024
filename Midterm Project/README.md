@@ -218,6 +218,19 @@ $$
 
 
 
+<p align="center">
+Moving to the z-axis analysis, we encounter another significant relationship that helps us understand the manipulator's behavior in the vertical direction. Considering the z-axis components, we find that the z-coordinate of the end effector (denoted as z) can be expressed as z = a1 - a4 - d3. Rearranging this equation, we derive the expression for the length of link d3 as d3 = a1 - a4 - z. This relationship clarifies how the length of link d3 affects the vertical position of the end effector, providing valuable insights for designing and controlling the manipulator's motion along the z-axis. Understanding these relationships is essential for effective analysis and design of Cartesian manipulators, as they form the basis for predicting and optimizing the manipulator's movement in different directions.
+
+</center>
+
+
+
+
+
+<center>
+In the top view analysis of the Cartesian manipulator, our attention shifts to the variable d1, which plays a crucial role in determining the position of the end effector along the y-axis. By examining the top view, we observe that the y-coordinate of the end effector (denoted as Y04) can be expressed as Y04 = a2 + d1, highlighting the sum of link lengths a2 and d1 along the y-axis. This relationship enables us to calculate the length of link d1 based on the known values of Y04 and a2, providing us with a clear understanding of how the manipulator's y-coordinate is influenced by the length of link d1. By comprehending this relationship, we can effectively design and control the manipulator's movement along the y-axis, ensuring precise positioning and motion control in various applications.
+</center>
+
 
 
 
