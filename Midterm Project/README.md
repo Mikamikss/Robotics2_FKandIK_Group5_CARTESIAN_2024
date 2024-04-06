@@ -275,9 +275,12 @@ In the top view analysis of the Cartesian manipulator, our attention shifts to t
 
 **FUNCTIONALITY:**
 
-  
-**Reset button**
+<center>
 
+### Reset button
+
+</center>
+  
 <p align="center">
   <a href="https://youtu.be/ZagkoxZFLTo">
     <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF1.png?raw=true" alt="Click to watch video" width="300">
@@ -291,7 +294,13 @@ In the top view analysis of the Cartesian manipulator, our attention shifts to t
 <div
   align="justify">&nbsp;</div>
 
-**Inverse Button**
+
+<center>
+
+### Inverse Button
+
+</center>
+
 
 <p align="center">
   <a href="https://youtu.be/SMgkW1vo-L0">
@@ -309,9 +318,12 @@ Note:
   The Inverse Button will only function correctly if there are values in the textboxes of Link Lengths and Position Vector.
 
 
+<center>
 
+### Forward Button
 
-**Forward Button**
+</center>
+
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=VIDEO_ID_HERE">
