@@ -298,9 +298,8 @@ The Forward Button will only function correctly if there are values in the textb
 <div style="text-align: left">
 
 5. Open the unzipped file entitled “GUI”.
-6. After opening the folder, under “build” the code for the Cartesian Calculator GUI is attached.
-7. To run the program, first you must download the requirements.
-8. To do this, open terminal of the file named “requirement.txt”
+6. To run the program, first you must download the requirements.
+7. To do this, open terminal of the file named “requirement.txt”
 
 </div>
 
@@ -310,7 +309,7 @@ The Forward Button will only function correctly if there are values in the textb
 
 <div style="text-align: left">
   
- 9. After opening requirements.txt, create a new terminal or use the shortcut Ctrl+Shift+’
+ 8. After opening requirements.txt, create a new terminal or use the shortcut Ctrl+Shift+’
 
  </div>
 
@@ -321,7 +320,7 @@ The Forward Button will only function correctly if there are values in the textb
  
  <div style="text-align: left">
    
- 10. On the terminal, type “pip install -r requirements.txt” to install all the requirements in order to make the program run.
+ 9. On the terminal, type “pip install -r requirements.txt” to install all the requirements in order to make the program run.
  
  </div>
 
@@ -331,7 +330,7 @@ The Forward Button will only function correctly if there are values in the textb
 
  <div style="text-align: left">
    
- 11. After the installation finishes, open “gui.py” under the folder “build”. To do that, type in terminal “cd build/”.
+ 10. After the installation finishes, open “gui.py” under the folder “build”. To do that, type in terminal “cd build/”.
  
  </div>
  
@@ -369,6 +368,10 @@ The Forward Button will only function correctly if there are values in the textb
  
  </div>
 
+We also included a python code with a GUI with a design same from the previous lesson. The python code is entitled gui2.py. You may use this to check the functionality of the Cartesian Manipulator Calculator without taking into account the GUI design. The purpose of "gui2.py" is to only show that the functionality of Cartesian Manipulator Calculator is working.
+
+Note: 
+  The python code "gui.py" is located under "build".
 
 
 
@@ -400,7 +403,7 @@ The Forward Button will only function correctly if there are values in the textb
 
 ### X :rocket: Group Members
 - Baylon, Aron James M.
-- Espina,  
-- Cabarrubia, 
-- Punzalan, 
-- , CHristian Kent
+- Espina, Mikaela 
+- Cabarrubia, Yuel Jeiro Daemian M.
+- Punzalan, Hazel
+- Montalbo, Christian Kent
