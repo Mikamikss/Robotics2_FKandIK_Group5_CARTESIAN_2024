@@ -68,11 +68,11 @@ Degrees of Freedom (DOF) refer to the number of independent parameters that defi
   |  **Cartesian Manipulator Solution** |
   |     :-----:      |
   | $$M = 6n - \sum_{i=1}^m (6-C_i)$$ |
-  | $$M = 6(3) - [(6-1) + (6-1) + (6-1)]$$ |
-  | $$M = 18 - (5 + 5 + 5)$$ |
-  | $$M = 18 - 15$$ |
-  | $$M = 3$$ |
-  | **∴ This is an Under-Actuated Cartesian Manipulator with 3 Degrees of Freedom (DOF).** |
+  | $$M = 6(4) - [(6-1) + (6-1) + (6-1)]$$ |
+  | $$M = 24 - (5 + 5 + 5)$$ |
+  | $$M = 24 - 15$$ |
+  | $$M = 9$$ |
+  | **∴ This is a Redundant Cartesian Manipulator with 9 Mobility.** |
 
 </div>
 <br>
