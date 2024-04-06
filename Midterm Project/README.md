@@ -429,17 +429,10 @@ The Forward Button will only function correctly if there are values in the textb
 
 <div style="text-align: left">
    
- 14. After typing python3 gui.py, the Cartesian Calculator GUI will appear.
+ 14. That’s all for the installation guide. Enjoy the Cartesian Calculator.
  
  </div>
 
-
-
-<div style="text-align: left">
-   
- 15. That’s all for the installation guide. Enjoy the Cartesian Calculator..
- 
- </div>
 
  
  We also included a python code with a GUI with a design same from the previous lesson. The python code is entitled gui2.py. You may use this to check the functionality of the Cartesian Manipulator Calculator without taking into account the GUI design. The purpose of "gui2.py" is to only show that the functionality of Cartesian Manipulator Calculator is working.
