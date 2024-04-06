@@ -208,7 +208,57 @@ $$
 
 ### VII :nut_and_bolt: Inverse Kinematics
 
+<p align="right">
+  <img src=https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Gif%20%26%20GUI/man-flexing-arm-muscle-dwg-ws-bs-gs-hd-anim.gif style="height: 200px; float: left;">
+ </p>
+
+
 <p align="justify"> 
+    Kinematics of a Cartesian manipulator involves describing the relationship between the manipulator's joint motions and the resulting position and orientation of its end-effector in a Cartesian coordinate system. This typically includes analyzing the manipulator's forward kinematics to determine the end-effector's pose based on the joint angles. Inverse Kinematics, on the other hand, involves solving for the joint angles required to achieve a desired end-effector pose. This process is essential for programming the manipulator to move to specific positions and orientations in its workspace. It's important in applications where precise control over the end-effector position is required, such as in pick-and-place operations in manufacturing or robotics.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
