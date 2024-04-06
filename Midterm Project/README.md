@@ -296,6 +296,7 @@ $$
 
 
 
+
 FUNCTIONALITY: 
 
 Reset button
@@ -305,6 +306,8 @@ Reset button
  </p>
 
 <p align="left">The reset button functions as the reset of all entities in the text box. By clicking the Reset Button it  does its programmed functionality. 
+
+
 
 
 Inverse Button
@@ -321,6 +324,9 @@ Note:
   
   The Inverse Button will only function correctly if there are values in the textboxes of Link Lengths and Position Vector.
 
+
+
+
 Forward Button
 
 <p align="left">
@@ -333,7 +339,13 @@ The forward button functions as the signal to compute the Position Vector of the
 <p align="left">
 Note: 
 The Forward Button will only function correctly when you type numbers (0,1,2,3,4,5,6,...). 
-The Forward Button will only function correctly if there are values in the textboxes of Link Lengths and Joint Variables
+
+  The Forward Button will only function correctly if there are values in the textboxes of Link Lengths and Joint Variables
+
+
+
+
+
 
  
 <p align="left">Installation
