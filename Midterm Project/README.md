@@ -322,8 +322,6 @@ The Forward Button will only function correctly when you type numbers (0,1,2,3,4
   The Forward Button will only function correctly if there are values in the textboxes of Link Lengths and Joint Variables
 
 
-
-
 <div
   align="justify">&nbsp;</div>
 <div
