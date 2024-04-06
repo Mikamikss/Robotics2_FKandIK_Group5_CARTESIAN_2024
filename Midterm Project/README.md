@@ -284,7 +284,7 @@ The Forward Button will only function correctly if there are values in the textb
 
 <div style="text-align: left">
 
-1. Download the zip file (https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Cartesian%20GUI%20Installer/CartesianCalculator.zip).
+1. Download the zip file https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Cartesian%20GUI%20Installer/CartesianCalculator_GUI.zip
 2. Extract the zip file in your chosen destination folder.
 3. Open Virtual Studio Code in Ubuntu.
 4. In Virtual Studio Code, click File then Open Folder.
