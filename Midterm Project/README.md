@@ -217,18 +217,22 @@ $$
 <p align="justify">
   In creating the Cartesian Calculator, instead of using the old fashion way of designing, we came across a website called Figma. Figma is a Tkinter Designer that generates the code after designing the GUI. 
 
+<p align="left">
+  <img src="Midterm Project/Pictures/UNDER INTRO.png" style="height: 200px; float: left;">
+ </p>
+
 <p align="center">Elements used:
 
 
   
 1.<p align="left">
-  <img src="pic here" style="height: 200px; float: left;">
+  <img src="Midterm Project/Pictures/CCC1.png" style="height: 200px; float: left;">
  </p>
 
 <p align="center">In the design, the D-H Frame Assignment of Cartesian Robot (Manipulator) can be seen in the upper left side of the GUI. 
 
 2.<p align="left">
-  <img src="pic here" style="height: 200px; float: left;">
+  <img src="Midterm Project/Pictures/CCC2.png" style="height: 200px; float: left;">
  </p>
 
 
