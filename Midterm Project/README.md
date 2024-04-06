@@ -275,27 +275,35 @@ In the top view analysis of the Cartesian manipulator, our attention shifts to t
 
 **FUNCTIONALITY:**
 
-<p align="center">Reset button</p>
+<p align="center"><strong>Reset button</strong></p>
 
+<p align="center">
+  <img src= "https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF1.png?raw=true" style="height: 200px;">
+ </p>
   
-<p align=" center ">
-  <a href="https://youtu.be/ZagkoxZFLTo">
-    <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF1.png?raw=true" alt="Click to watch video" width="300">
-  </a>
-</p>
 
 
 <p align="left">The reset button functions as the reset of all entities in the text box. By clicking the Reset Button it  does its programmed functionality. 
 
+**Demonstration Video**
+<p align=" center ">
+  <a href="https://youtu.be/ZagkoxZFLTo">
+    <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/THUMBNAIL.jpg alt="Click to watch video" width="200">
+  </a>
+</p>
+
 
   
-<p align="center">Inverse Button</p>
-
-
+<p align="center"><strong>Inverse Button</strong></p>
 
 <p align="center">
+  <img src= "https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF2.png?raw=true" style="height: 200px;">
+ </p>
+  
+**Demonstration Video**
+<p align="center">
   <a href="https://youtu.be/SMgkW1vo-L0">
-    <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF2.png?raw=true" alt="Click to watch video" width="300">
+    <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/THUMBNAIL.jpg alt="Click to watch video" width="300">
   </a>
 </p>
 
