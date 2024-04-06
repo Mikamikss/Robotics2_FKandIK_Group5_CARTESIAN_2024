@@ -278,7 +278,12 @@ In the top view analysis of the Cartesian manipulator, our attention shifts to t
   
 **Reset button**
 
-[![Click to watch video](https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF1.png)](https://youtu.be/ZagkoxZFLTo)
+<p align="center">
+  <a href="https://youtu.be/ZagkoxZFLTo">
+    <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF1.png?raw=true" alt="Click to watch video" width="300">
+  </a>
+</p>
+
 
 <p align="left">The reset button functions as the reset of all entities in the text box. By clicking the Reset Button it  does its programmed functionality. 
 
@@ -288,7 +293,12 @@ In the top view analysis of the Cartesian manipulator, our attention shifts to t
 
 **Inverse Button**
 
-[![Click to watch video]( https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF2.png?raw=true)](https://youtu.be/SMgkW1vo-L0)
+<p align="center">
+  <a href="https://youtu.be/SMgkW1vo-L0">
+    <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF2.png?raw=true" alt="Click to watch video" width="300">
+  </a>
+</p>
+
  
 <p align="left">The inverse button functions as the signal to compute the Joint Variable of the Cartesian Robot (manipulator). By clicking the Inverse Button it does its programmed functionality. 
 
@@ -303,7 +313,11 @@ Note:
 
 **Forward Button**
 
-[![Click to watch video](https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/raw/main/Midterm%20Project/Pictures/FFF3.png)](https://www.youtube.com/watch?v=VIDEO_ID_HERE)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=VIDEO_ID_HERE">
+    <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/raw/main/Midterm%20Project/Pictures/FFF3.png" alt="Click to watch video" width="300">
+  </a>
+</p>
 
 
 <p align="left"> 
