@@ -317,9 +317,6 @@ The Forward Button will only function correctly if there are values in the textb
 
  </div>
 
-<p align="left">
-  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS10.png?raw=true" style="height: 200px; float: left;">
- </p>
 
  
  <div style="text-align: left">
@@ -328,9 +325,7 @@ The Forward Button will only function correctly if there are values in the textb
  
  </div>
 
-<p align="left">
-  <img src="pic here" style="height: 200px; float: left;">
- </p>
+
 
  <div style="text-align: left">
    
@@ -339,7 +334,7 @@ The Forward Button will only function correctly if there are values in the textb
  </div>
  
 <p align="left">
-  <img src="" style="height: 200px; float: left;">
+  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS10.png?raw=true" style="height: 200px; float: left;">
  </p>
  
 <div style="text-align: left">
@@ -389,40 +384,17 @@ The Forward Button will only function correctly if there are values in the textb
  </p>
 
 
-
+<div style="text-align: left">
+   
+ 15. That’s all for the installation guide. Enjoy the Cartesian Calculator..
+ 
+ </div>
 
  
- 
-
-We also included a python code with a GUI with a design same from the previous lesson. The python code is entitled gui2.py. You may use this to check the functionality of the Cartesian Manipulator Calculator without taking into account the GUI design. The purpose of "gui2.py" is to only show that the functionality of Cartesian Manipulator Calculator is working.
+ We also included a python code with a GUI with a design same from the previous lesson. The python code is entitled gui2.py. You may use this to check the functionality of the Cartesian Manipulator Calculator without taking into account the GUI design. The purpose of "gui2.py" is to only show that the functionality of Cartesian Manipulator Calculator is working.
 
 Note: 
-  The python code "gui.py" is located under "build".
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+  The python code "gui.py" is located under "build"
  
 ### IX :hammer:References
 
