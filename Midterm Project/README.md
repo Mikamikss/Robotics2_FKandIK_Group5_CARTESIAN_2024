@@ -340,7 +340,7 @@ The Forward Button will only function correctly if there are values in the textb
  
 <div style="text-align: left">
    
- 12. Under /GUI/build$ run the program by typing in the terminal “python3 gui.py”
+ 11. Under /GUI/build$ run the program by typing in the terminal “python3 gui.py”
  
  </div>
 
@@ -354,7 +354,7 @@ The Forward Button will only function correctly if there are values in the textb
 
  <div style="text-align: left">
    
- 13. After typing python3 gui.py, the Cartesian Calculator GUI will appear.
+ 12. After typing python3 gui.py, the Cartesian Calculator GUI will appear.
  
  </div>
  
@@ -364,7 +364,7 @@ The Forward Button will only function correctly if there are values in the textb
 
 <div style="text-align: left">
    
- 14. That’s all for the installation guide. Enjoy the Cartesian Calculator.
+ 13. That’s all for the installation guide. Enjoy the Cartesian Calculator.
  
  </div>
 
