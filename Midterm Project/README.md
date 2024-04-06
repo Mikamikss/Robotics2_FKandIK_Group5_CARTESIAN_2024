@@ -298,7 +298,8 @@ $$
 
 
 FUNCTIONALITY: 
-
+<div
+  align="justify">&nbsp;</div>
 Reset button
 
 <p align="left">
@@ -308,7 +309,8 @@ Reset button
 <p align="left">The reset button functions as the reset of all entities in the text box. By clicking the Reset Button it  does its programmed functionality. 
 
 
-
+<div
+  align="justify">&nbsp;</div>
 
 Inverse Button
 
@@ -324,7 +326,8 @@ Note:
   
   The Inverse Button will only function correctly if there are values in the textboxes of Link Lengths and Position Vector.
 
-
+<div
+  align="justify">&nbsp;</div>
 
 
 Forward Button
@@ -345,11 +348,17 @@ The Forward Button will only function correctly when you type numbers (0,1,2,3,4
 
 
 
-
+<div
+  align="justify">&nbsp;</div>
+<div
+  align="justify">&nbsp;</div>
 
  
 <p align="left">Installation
-
+  
+<div
+  align="justify">&nbsp;</div>
+  
 <p align="left">INSTALLATION GUIDE
 
 <div style="text-align: left">
