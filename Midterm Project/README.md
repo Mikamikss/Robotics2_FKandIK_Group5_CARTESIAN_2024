@@ -268,7 +268,7 @@ $$
   In creating the Cartesian Calculator, instead of using the old fashion way of designing, we came across a website called Figma. Figma is a Tkinter Designer that generates the code after designing the GUI. 
 
 <p align="center">
-  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/UNDER%20INTRO.png style="height: 200px;">
+  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/UNDER%20INTRO.png style="height: 500px;">
  </p>
 
 <p align="center">Elements used:
