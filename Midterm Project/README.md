@@ -233,10 +233,10 @@ In the top view analysis of the Cartesian manipulator, our attention shifts to t
 
 
 
-
-
-
-
+align="justify">
+align="justify">
+align="justify">
+align="justify">
 
 
 
