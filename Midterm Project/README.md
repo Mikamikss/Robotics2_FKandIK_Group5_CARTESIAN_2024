@@ -218,7 +218,7 @@ $$
   In creating the Cartesian Calculator, instead of using the old fashion way of designing, we came across a website called Figma. Figma is a Tkinter Designer that generates the code after designing the GUI. 
 
 <p align="center">
-  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/UNDER%20INTRO.png style="height: 300px;">
+  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/UNDER%20INTRO.png style="height: 200px;">
  </p>
 
 <p align="center">Elements used:
@@ -226,20 +226,20 @@ $$
 
   
 1.<p align="left">
-  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/CCC1.png style="height: 300px;">
+  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/CCC1.png style="height: 200px;">
  </p>
 
 <p align="left">In the design, the D-H Frame Assignment of Cartesian Robot (Manipulator) can be seen in the upper left side of the GUI. 
 
 2.<p align="left">
-  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/CCC2.png style="height: 300px;">
+  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/CCC2.png style="height: 200px;">
  </p>
 
 
 <p align="left">In the design, the 3D view of the Cartesian Robot (Manipulator) from Matlab can be seen in the upper right side of the GUI. 
 
 3.<p align="left">
-  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/CCC3.png style="height: 300px;">
+  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/CCC3.png style="height: 200px;">
  </p>
 
 <p align="left">In the design, the 3D view of the Cartesian Robot (Manipulator) from Matlab can be seen in the upper right side of the GUI.
@@ -249,16 +249,18 @@ $$
 FUNCTIONALITY: 
 
 Reset button
+
 <p align="left">
-  <img src="pic here" style="height: 200px; float: left;">
+  <img src= "https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF1.png" style="height: 100px;">
  </p>
 
 <p align="left">The reset button functions as the reset of all entities in the text box. By clicking the Reset Button it  does its programmed functionality. 
 
 
 Inverse Button
- <p align="left">
-  <img src="pic here" style="height: 200px; float: left;">
+
+<p align="left">
+  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF2.png?raw=true" style="height: 100px;">
  </p>
  
 <p align="left">The inverse button functions as the signal to compute the Joint Variable of the Cartesian Robot (manipulator). By clicking the Inverse Button it does its programmed functionality. 
@@ -269,8 +271,9 @@ Note:
   The Inverse Button will only function correctly if there are values in the textboxes of Link Lengths and Position Vector.
 
 Forward Button
- <p align="left">
-  <img src="pic here" style="height: 200px; float: left;">
+
+<p align="left">
+  <img src= "https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF3.png?raw=true" style="height: 100px;">
  </p>
 
 <p align="left"> 
@@ -293,14 +296,10 @@ The Forward Button will only function correctly if there are values in the textb
 3. Open Virtual Studio Code in Ubuntu.
 4. In Virtual Studio Code, click File then Open Folder.
 
-</div>
-
 <p align="left">
-  <img src="pic here" style="height: 200px; float: left;">
+  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS4.png?raw=true" style="height: 200px; float: left;">
  </p>
-
-<div style="text-align: left">
-
+ 
 5. Open the unzipped file entitled “GUI”.
 6. To run the program, first you must download the requirements.
 7. To do this, open terminal of the file named “requirement.txt”
@@ -308,9 +307,10 @@ The Forward Button will only function correctly if there are values in the textb
 </div>
 
 <p align="left">
-  <img src="pic here" style="height: 200px; float: left;">
+  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS8.png?raw=true" style="height: 200px; float: left;">
  </p>
 
+  
 <div style="text-align: left">
   
  8. After opening requirements.txt, create a new terminal or use the shortcut Ctrl+Shift+’
@@ -318,7 +318,7 @@ The Forward Button will only function correctly if there are values in the textb
  </div>
 
 <p align="left">
-  <img src="pic here" style="height: 200px; float: left;">
+  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS10.png?raw=true" style="height: 200px; float: left;">
  </p>
 
  
@@ -339,7 +339,7 @@ The Forward Button will only function correctly if there are values in the textb
  </div>
  
 <p align="left">
-  <img src="pic here" style="height: 200px; float: left;">
+  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS4.png?raw=true" style="height: 200px; float: left;">
  </p>
  
 <div style="text-align: left">
@@ -349,7 +349,7 @@ The Forward Button will only function correctly if there are values in the textb
  </div>
 
 <p align="left">
-  <img src="pic here" style="height: 200px; float: left;">
+  <img src="(https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS13.png?raw=true)" style="height: 200px; float: left;">
  </p>
  
  </div>
@@ -363,7 +363,7 @@ The Forward Button will only function correctly if there are values in the textb
  </div>
  
 <p align="left">
-  <img src="pic here" style="height: 200px; float: left;">
+  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS12.png?raw=true" style="height: 200px; float: left;">
  </p>
 
 <div style="text-align: left">
