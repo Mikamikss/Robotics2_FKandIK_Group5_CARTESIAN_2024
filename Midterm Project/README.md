@@ -217,6 +217,9 @@ $$
     Kinematics of a Cartesian manipulator involves describing the relationship between the manipulator's joint motions and the resulting position and orientation of its end-effector in a Cartesian coordinate system. This typically includes analyzing the manipulator's forward kinematics to determine the end-effector's pose based on the joint angles. Inverse Kinematics, on the other hand, involves solving for the joint angles required to achieve a desired end-effector pose. This process is essential for programming the manipulator to move to specific positions and orientations in its workspace. It's important in applications where precise control over the end-effector position is required, such as in pick-and-place operations in manufacturing or robotics.
 
 
+<p align="center">
+  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/front%20view.png style="height: 300px;">
+ </p>
 
 <p align="center">
 Moving to the z-axis analysis, we encounter another significant relationship that helps us understand the manipulator's behavior in the vertical direction. Considering the z-axis components, we find that the z-coordinate of the end effector (denoted as z) can be expressed as z = a1 - a4 - d3. Rearranging this equation, we derive the expression for the length of link d3 as d3 = a1 - a4 - z. This relationship clarifies how the length of link d3 affects the vertical position of the end effector, providing valuable insights for designing and controlling the manipulator's motion along the z-axis. Understanding these relationships is essential for effective analysis and design of Cartesian manipulators, as they form the basis for predicting and optimizing the manipulator's movement in different directions.
@@ -224,8 +227,9 @@ Moving to the z-axis analysis, we encounter another significant relationship tha
 </center>
 
 
-
-
+<p align="center">
+  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/top%20view.png style="height: 300px;">
+ </p>
 
 <center>
 In the top view analysis of the Cartesian manipulator, our attention shifts to the variable d1, which plays a crucial role in determining the position of the end effector along the y-axis. By examining the top view, we observe that the y-coordinate of the end effector (denoted as Y04) can be expressed as Y04 = a2 + d1, highlighting the sum of link lengths a2 and d1 along the y-axis. This relationship enables us to calculate the length of link d1 based on the known values of Y04 and a2, providing us with a clear understanding of how the manipulator's y-coordinate is influenced by the length of link d1. By comprehending this relationship, we can effectively design and control the manipulator's movement along the y-axis, ensuring precise positioning and motion control in various applications.
@@ -233,50 +237,6 @@ In the top view analysis of the Cartesian manipulator, our attention shifts to t
 
 
 
-align="justify">
-align="justify">
-align="justify">
-align="justify">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div
-  align="justify">&nbsp;</div>
-  <div
-  align="justify">&nbsp;</div>
 
 
 ### VIII :file_folder: Forward and Inverse Kinematics GUI Calculator:
