@@ -78,7 +78,7 @@ Degrees of Freedom (DOF) refer to the number of independent parameters that defi
 <br>
 
 <p align="justify">
-  The formula calculates the mobility (M) of a Cartesian manipulator with three degrees of freedom (DOF). It starts with the total possible DOF (6 times the number of joints) and subtracts the constraints introduced by passive joints. In this case, with three joints and no passive joints, the calculation simplifies to M = 6(3) - 0 = 18. Since the manipulator is under-actuated with 3 DOF, the final mobility is 18 - 3 = 15. This means the manipulator can move in three independent directions, as expected for an under-actuated Cartesian manipulator with 3 DOF.
+  The formula calculates the mobility (M) of a Cartesian manipulator with three degrees of freedom (DOF). It starts with the total possible DOF (6 times the number of joints) and subtracts the constraints introduced by passive joints. In this case, with three joints and no passive joints, the calculation simplifies to M = 6(4) - 0 = 24. Since the manipulator is redundant with 3 DOF, the final mobility is 24 - 3 = 24. This means the manipulator can move in three independent directions, as expected for a Redundant Cartesian manipulator with 3 DOF.
 
   
 ### IV :package: Kinematic Diagram and D-H Frame
