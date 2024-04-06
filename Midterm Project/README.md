@@ -278,9 +278,7 @@ FUNCTIONALITY:
   align="justify">&nbsp;</div>
 Reset button
 
-<p align="left">
-  <img src= "https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF1.png" style="height: 100px;">
- </p>
+[![Click to watch video](https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF1.png)](https://youtu.be/ZagkoxZFLTo)
 
 <p align="left">The reset button functions as the reset of all entities in the text box. By clicking the Reset Button it  does its programmed functionality. 
 
@@ -290,9 +288,7 @@ Reset button
 
 Inverse Button
 
-<p align="left">
-  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF2.png?raw=true" style="height: 100px;">
- </p>
+[![Click to watch video]( https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF2.png?raw=true)](https://youtu.be/SMgkW1vo-L0)
  
 <p align="left">The inverse button functions as the signal to compute the Joint Variable of the Cartesian Robot (manipulator). By clicking the Inverse Button it does its programmed functionality. 
 
@@ -308,9 +304,8 @@ Note:
 
 Forward Button
 
-<p align="left">
-  <img src= "https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF3.png?raw=true" style="height: 100px;">
- </p>
+[![Click to watch video](https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/raw/main/Midterm%20Project/Pictures/FFF3.png)](https://www.youtube.com/watch?v=VIDEO_ID_HERE)
+
 
 <p align="left"> 
 The forward button functions as the signal to compute the Position Vector of the Cartesian Robot (manipulator). By clicking the Inverse Button it does its programmed functionality.
