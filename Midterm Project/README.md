@@ -273,7 +273,10 @@ align="justify">
 
 
 
-
+<div
+  align="justify">&nbsp;</div>
+  <div
+  align="justify">&nbsp;</div>
 
 
 ### VIII :file_folder: Forward and Inverse Kinematics GUI Calculator:
