@@ -278,35 +278,26 @@ In the top view analysis of the Cartesian manipulator, our attention shifts to t
 <p align="center"><strong>Reset button</strong></p>
 
 <p align="center">
-  <img src= "https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF1.png?raw=true" style="height: 200px;">
+  <img src= "https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF1.png?raw=true" style="height: 50px;">
  </p>
   
-
-
 <p align="left">The reset button functions as the reset of all entities in the text box. By clicking the Reset Button it  does its programmed functionality. 
 
 **Demonstration Video**
 <p align=" center ">
   <a href="https://youtu.be/ZagkoxZFLTo">
-    <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/THUMBNAIL.jpg alt="Click to watch video" width="200">
-  </a>
-</p>
-
-
-  
-<p align="center"><strong>Inverse Button</strong></p>
-
-<p align="center">
-  <img src= "https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF2.png?raw=true" style="height: 200px;">
- </p>
-  
-**Demonstration Video**
-<p align="center">
-  <a href="https://youtu.be/SMgkW1vo-L0">
     <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/THUMBNAIL.jpg alt="Click to watch video" width="300">
   </a>
 </p>
 
+<hr>
+
+<p align="center"><strong>Inverse Button</strong></p>
+
+<p align="center">
+  <img src= "https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/FFF2.png?raw=true" style="height: 50px;">
+ </p>
+  
  
 <p align="left">The inverse button functions as the signal to compute the Joint Variable of the Cartesian Robot (manipulator). By clicking the Inverse Button it does its programmed functionality. 
 
@@ -315,27 +306,40 @@ Note:
   The Inverse Button will only function correctly when you type numbers (0,1,2,3,4,5,6,...). 
   
   The Inverse Button will only function correctly if there are values in the textboxes of Link Lengths and Position Vector.
-
-
-
-<p align="center">Forward Button</p>
-
-
+  
+**Demonstration Video**
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=VIDEO_ID_HERE">
-    <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/raw/main/Midterm%20Project/Pictures/FFF3.png" alt="Click to watch video" width="300">
+  <a href="https://youtu.be/SMgkW1vo-L0">
+    <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/THUMBNAIL.jpg alt="Click to watch video" width="300">
   </a>
 </p>
 
+<hr>
 
+<p align="center"><strong>Forward Button</strong></p>
+
+<p align="center">
+  <img src= "https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/raw/main/Midterm%20Project/Pictures/FFF3.png" style="height: 50px;">
+ </p>
+
+  
 <p align="left"> 
 The forward button functions as the signal to compute the Position Vector of the Cartesian Robot (manipulator). By clicking the Inverse Button it does its programmed functionality.
   
 <p align="left">
 Note: 
 The Forward Button will only function correctly when you type numbers (0,1,2,3,4,5,6,...). 
+The Forward Button will only function correctly if there are values in the textboxes of Link Lengths and Joint Variables
+  
+**Demonstration Video**
+<p align="center">
+  <a href="https://youtu.be/kDal61jIYYo">
+    <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/THUMBNAIL.jpg alt="Click to watch video" width="300">
+  </a>
+</p>
 
-  The Forward Button will only function correctly if there are values in the textboxes of Link Lengths and Joint Variables
+
+<hr>
 
 
 <div
