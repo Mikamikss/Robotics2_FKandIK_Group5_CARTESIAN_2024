@@ -318,6 +318,7 @@ Inverse Button
 <p align="left">
 Note: 
   The Inverse Button will only function correctly when you type numbers (0,1,2,3,4,5,6,...). 
+  
   The Inverse Button will only function correctly if there are values in the textboxes of Link Lengths and Position Vector.
 
 Forward Button
