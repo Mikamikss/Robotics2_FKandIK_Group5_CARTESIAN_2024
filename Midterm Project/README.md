@@ -352,7 +352,8 @@ The Forward Button will only function correctly if there are values in the textb
  
 5. Open the unzipped file entitled “GUI”.
 6. To run the program, first you must download the requirements.
-7. To do this, open terminal of the file named “requirement.txt”
+7. To run the program, first you must download the requirements.
+
 
 </div>
 
@@ -363,7 +364,7 @@ The Forward Button will only function correctly if there are values in the textb
   
 <div style="text-align: left">
   
- 8. After opening requirements.txt, create a new terminal or use the shortcut Ctrl+Shift+’
+ 8. To do this, open terminal of the file named “requirement.txt”
 
  </div>
 
@@ -373,7 +374,7 @@ The Forward Button will only function correctly if there are values in the textb
  
  <div style="text-align: left">
    
- 9. On the terminal, type “pip install -r requirements.txt” to install all the requirements in order to make the program run.
+ 9. After opening requirements.txt, create a new terminal or use the shortcut Ctrl+Shift+’
  
  </div>
 
@@ -385,7 +386,7 @@ The Forward Button will only function correctly if there are values in the textb
 
  <div style="text-align: left">
    
- 10. After the installation finishes, open “gui.py” under the folder “build”. To do that, type in terminal “cd build/”.
+ 10. On the terminal, type “pip install -r requirements.txt” to install all the requirements in order to make the program run.
  
  </div>
  
@@ -393,33 +394,36 @@ The Forward Button will only function correctly if there are values in the textb
  
 <div style="text-align: left">
    
- 11. Under /GUI/build$ run the program by typing in the terminal “python3 gui.py”
+ 11. After the installation finishes, open “gui.py” under the folder “build”. To do that, type in terminal “cd build/”.
+
  
  </div>
 
-
-
-
- <div style="text-align: left">
-   
- 12. After typing python3 gui.py, the Cartesian Calculator GUI will appear.
- 
- </div>
- 
 <p align="left">
   <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS12.png?raw=true" style="height: 200px; float: left;">
  </p>
 
+
+ <div style="text-align: left">
+   
+ 12. Under /GUI/build$ run the program by typing in the terminal “python3 gui.py”
+ 
+ </div>
+ 
+<p align="left">
+  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS13.png?raw=true" style="height: 200px; float: left;">
+ </p>
+
 <div style="text-align: left">
    
- 13. That’s all for the installation guide. Enjoy the Cartesian Calculator.
+ 13. After typing python3 gui.py, the Cartesian Calculator GUI will appea.
  
  </div>
 
 <p align="left">
-  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS13.png?raw=true" style="height: 200px; float: left;">
+  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS14.png?raw=true" style="height: 200px; float: left;">
  </p>
- 
+
  </div>
 
 <div style="text-align: left">
@@ -428,9 +432,6 @@ The Forward Button will only function correctly if there are values in the textb
  
  </div>
 
-<p align="left">
-  <img src="https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/INS14.png?raw=true" style="height: 200px; float: left;">
- </p>
 
 
 <div style="text-align: left">
