@@ -209,8 +209,7 @@ $$
 ### VII :nut_and_bolt: Inverse Kinematics
 
 <p align="right">
-  <img src=https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Gif%20%26%20GUI/man-flexing-arm-muscle-dwg-ws-bs-gs-hd-anim.gif style="height: 200px; float: left;">
- </p>
+  
 
 
 <p align="justify"> 
@@ -244,7 +243,7 @@ In the top view analysis of the Cartesian manipulator, our attention shifts to t
   In creating the Cartesian Calculator, instead of using the old fashion way of designing, we came across a website called Figma. Figma is a Tkinter Designer that generates the code after designing the GUI. 
 
 <p align="center">
-  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/UNDER%20INTRO.png style="height: 500px;">
+  <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/UNDER%20INTRO.png style="height: 650px;">
  </p>
 
 <p align="center">Elements used:
@@ -286,7 +285,7 @@ In the top view analysis of the Cartesian manipulator, our attention shifts to t
 **Demonstration Video**
 <p align=" center ">
   <a href="https://youtu.be/ZagkoxZFLTo">
-    <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/THUMBNAIL.jpg alt="Click to watch video" width="300">
+    <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/THUMBNAIL.jpg alt="Click to watch video" width="500">
   </a>
 </p>
 
@@ -310,7 +309,7 @@ Note:
 **Demonstration Video**
 <p align="center">
   <a href="https://youtu.be/SMgkW1vo-L0">
-    <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/THUMBNAIL.jpg alt="Click to watch video" width="300">
+    <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/THUMBNAIL.jpg alt="Click to watch video" width="500">
   </a>
 </p>
 
@@ -334,7 +333,7 @@ The Forward Button will only function correctly if there are values in the textb
 **Demonstration Video**
 <p align="center">
   <a href="https://youtu.be/kDal61jIYYo">
-    <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/THUMBNAIL.jpg alt="Click to watch video" width="300">
+    <img src= https://github.com/Mikamikss/Robotics2_FKandIK_Group5_CARTESIAN_2024/blob/main/Midterm%20Project/Pictures/THUMBNAIL.jpg alt="Click to watch video" width="500">
   </a>
 </p>
 
